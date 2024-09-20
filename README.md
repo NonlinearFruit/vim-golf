@@ -6,6 +6,7 @@ Using vim golf to grow nvim skills
 - Possible solution constraints
   - ex mode
   - normal+visual mode
+  - macro mode
   - insert mode
   - lua
 - Expand to other editors
