@@ -1,3 +1,7 @@
+def --wrapped main [...rest] {
+  nu -c $'use toolkit.nu; toolkit ($rest | str join " ")'
+}
+
 export def download-challenge [title challenge_id description] {
     let challenge_path = $title | str downcase | str replace --all -r '\s' '-'
     mkdir $challenge_path
