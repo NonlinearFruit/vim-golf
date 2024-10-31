@@ -3,7 +3,7 @@ Using vim golf to grow nvim skills
 ## How To
 
 ```sh
-nu -c 'use toolkit.nu *; get-latest-challenge'
+nu toolkit.nu get-latest-challenge
 git add -A
 vim -w puzzle-folder/normal-mode.txt puzzle-folder/input.txt
 git diff --no-index puzzle-folder/input.txt puzzle-folder/output.txt
