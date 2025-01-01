@@ -6,15 +6,21 @@ Using vim golf to grow nvim skills
 nu toolkit.nu get-latest-challenge
 git add -A
 vim -w puzzle-folder/normal-mode.txt puzzle-folder/input.txt
-git diff --no-index puzzle-folder/input.txt puzzle-folder/output.txt
-git restore .
+nu toolkit.nu run-challenge # select challenge, select mode
 git add -A
-git commit -m 'Solve something something puzzle'
+git commit -m 'Solve $PUZZLE'
 ```
 
 ## Ideas
 
 - Generate the readme
+  - Name of problem
+  - Link to folder
+  - Link to vim golf problem
+  - Help docs for toolkit
+  - For each mode:
+      - Name of mode
+      - Number of bytes in file
 - Possible solution constraints
   - ex mode
   - normal+visual mode
@@ -27,7 +33,4 @@ git commit -m 'Solve something something puzzle'
 
 ## Problems
 
-- How to verify solutions?
-  - Is it possible to execute these scripts and compare the output?
-    - <https://stackoverflow.com/a/9445742/4769802>
-  - Is it possible to automate this with nushell?
+- How to verify solutions in pipeline?
