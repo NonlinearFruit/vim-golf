@@ -46,5 +46,21 @@ export def get-latest-challenge [] {
 }
 
 export def run-challenge [] {
- print "vim -e -s input.txt <ex-mode.txt; git diff --no-index input.txt output.txt && git restore input.txt"
+  let challenge = ls
+  | where type == dir
+  | get name
+  | str join (char newline)
+  | ^fzf --prompt="Run Challenge: " --reverse --height=20%
+
+  open ($challenge | path join ex-mode.txt)
+  | ^nvim -e -s ($challenge | path join input.txt)
+  ^git diff --exit-code --no-index ($challenge | path join input.txt) ($challenge | path join output.txt)
+  | complete
+  | if $in.exit_code == 0 {
+    print $"($challenge): Succeed"
+  } else {
+    print $in.stdout
+    print $"($challenge): Failed"
+  }
+  ^git restore ($challenge | path join input.txt)
 }
