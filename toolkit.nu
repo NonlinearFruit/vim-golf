@@ -45,3 +45,6 @@ export def get-latest-challenge [] {
   | download-challenge $in.title $in.challenge_id $in.description
 }
 
+export def run-challenge [] {
+ print "vim -e -s input.txt <ex-mode.txt; git diff --no-index input.txt output.txt && git restore input.txt"
+}
