@@ -13,8 +13,6 @@ export def download-challenge [title challenge_id description] {
       $response.out.data
       | save -f ([$challenge_path output.txt] | path join)
     } $in
-    | to yaml
-    | print
 
     [
       $"# [($title)]\(https://www.vimgolf.com/challenges/($challenge_id))"
@@ -42,7 +40,11 @@ export def get-latest-challenge [] {
     challenge_id: ($in | where tag == link | get 0.content.0.content | parse 'https://www.vimgolf.com/challenges/{challenge_id}' | get 0.challenge_id)
     description: ($in | where tag == description | get 0.content.0.content)
   }
-  | download-challenge $in.title $in.challenge_id $in.description
+  | do {|challenge|
+    download-challenge $challenge.title $challenge.challenge_id $challenge.description
+    print $"Downloaded: ($challenge.title)"
+  } $in
+  null
 }
 
 export def run-challenge [] {
