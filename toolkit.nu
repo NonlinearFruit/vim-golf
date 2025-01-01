@@ -54,8 +54,19 @@ export def run-challenge [] {
   | str join (char newline)
   | ^fzf --prompt="Run Challenge: " --reverse --height=20%
 
-  open ($challenge | path join ex-mode.txt)
-  | ^nvim -e -s ($challenge | path join input.txt)
+  let mode = ls $challenge
+  | where name =~ mode.txt
+  | get name
+  | path parse
+  | get stem
+  | str join (char newline)
+  | ^fzf --prompt="With Mode: " --reverse --height=20%
+
+  match $mode {
+    ex-mode => { run-ex-mode $challenge },
+    normal-mode => { run-normal-mode $challenge }
+  }
+
   ^git diff --exit-code --no-index ($challenge | path join input.txt) ($challenge | path join output.txt)
   | complete
   | if $in.exit_code == 0 {
@@ -64,5 +75,15 @@ export def run-challenge [] {
     print $in.stdout
     print $"($challenge): Failed"
   }
+
   ^git restore ($challenge | path join input.txt)
+}
+
+def run-ex-mode [challenge] {
+  open ($challenge | path join ex-mode.txt)
+  | ^nvim -e -s ($challenge | path join input.txt)
+}
+
+def run-normal-mode [challenge] {
+  ^nvim -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
 }
