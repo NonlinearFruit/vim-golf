@@ -22,11 +22,11 @@ git commit -m 'Solve $PUZZLE'
       - Name of mode
       - Number of bytes in file
 - Possible solution constraints
-  - ex mode
-  - normal+visual mode
-  - macro mode
-  - insert mode
-  - lua
+  - [x] ex mode
+  - [x] normal+visual mode
+  - [ ] macro mode
+  - [ ] insert mode (`vim -c 'startinsert' FILENAME`)
+  - [ ] lua
 - Expand to other editors
   - Helix
   - kakoune
