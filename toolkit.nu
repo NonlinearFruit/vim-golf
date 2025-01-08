@@ -65,6 +65,7 @@ export def run-challenge [] {
   match $mode {
     ex-mode => { run-ex-mode $challenge },
     normal-mode => { run-normal-mode $challenge }
+    insert-mode => { run-insert-mode $challenge }
   }
 
   ^git diff --exit-code --no-index ($challenge | path join input.txt) ($challenge | path join output.txt)
@@ -87,3 +88,42 @@ def run-ex-mode [challenge] {
 def run-normal-mode [challenge] {
   ^nvim -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
 }
+
+def run-insert-mode [challenge] {
+  print "TODO: Can't run insert mode yet"
+  #^nvim -c 'startinsert' -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+}
+
+export def try-challenge [] {
+  let challenge = ls
+  | where type == dir
+  | get name
+  | str join (char newline)
+  | ^fzf --prompt="Try Challenge: " --reverse --height=20%
+
+  let mode = [
+    normal-mode
+    ex-mode
+    insert-mode
+  ]| str join (char newline)
+  | ^fzf --prompt="With Mode: " --reverse --height=20%
+
+  match $mode {
+    ex-mode => { try-ex-mode $challenge },
+    normal-mode => { try-normal-mode $challenge }
+    insert-mode => { try-insert-mode $challenge }
+  }
+}
+
+def try-ex-mode [challenge] {
+  ^nvim -e -W ($challenge | path join ex-mode.txt) ($challenge | path join input.txt)
+}
+
+def try-normal-mode [challenge] {
+  ^nvim -W ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+}
+
+def try-insert-mode [challenge] {
+  ^nvim -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
+}
+

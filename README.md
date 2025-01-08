@@ -26,7 +26,7 @@ git commit -m 'Solve $PUZZLE'
   - [x] normal+visual mode
   - [ ] macro mode
   - [ ] insert mode (`vim -c 'startinsert' FILENAME`)
-  - [ ] lua
+  - [ ] lua (`vim -c 'luafile lua-mode.txt' FILENAME`)
 - Expand to other editors
   - Helix
   - kakoune
