@@ -101,11 +101,8 @@ export def try-challenge [] {
   | str join (char newline)
   | ^fzf --prompt="Try Challenge: " --reverse --height=20%
 
-  let mode = [
-    normal-mode
-    ex-mode
-    insert-mode
-  ]| str join (char newline)
+  let mode = modes
+  | str join (char newline)
   | ^fzf --prompt="With Mode: " --reverse --height=20%
 
   match $mode {
@@ -127,3 +124,25 @@ def try-insert-mode [challenge] {
   ^nvim -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
 }
 
+export def update-readme [] {
+  ls */*-mode.txt
+  | rename --column { size: score }
+  | insert challenge { get name | path parse | get parent }
+  | insert mode { get name | path parse | get stem | str replace '-mode' '' }
+  | group-by challenge
+  | transpose challenge data
+  | each {|it|
+    $it.data
+    | reduce --fold { challenge: $it.challenge } {|it, acc|
+      $acc | insert $it.mode $it.score
+    }
+  }
+}
+
+def modes [] {
+  [
+    ex
+    normal
+    insert
+  ]
+}
