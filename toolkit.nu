@@ -1,5 +1,13 @@
+#!/usr/bin/env nu
+
 def --wrapped main [...rest] {
-  nu -c $'use toolkit.nu; toolkit ($rest | str join " ")'
+  const pathToSelf = path self
+  let nameOfSelf = $pathToSelf | path parse | get stem
+  if $rest in [ [-h] [--help] ] {
+    nu -c $'use ($pathToSelf); scope modules | where name == ($nameOfSelf) | get 0.commands.name'
+  } else {
+    nu -c $'use ($pathToSelf); ($nameOfSelf) ($rest | str join (" "))'
+  }
 }
 
 export def download-challenge [title challenge_id description] {
