@@ -145,6 +145,13 @@ export def update-readme [] {
       $acc | insert $it.mode $it.score
     }
   }
+  | default '' ex
+  | default '' normal
+  | each {|it|
+    $'| ($it.challenge) | ($it.ex) | ($it.normal) |'
+  }
+  | prepend ["|challenge|ex|normal|" "|---|---|---|"]
+  | str join (char newline)
 }
 
 def modes [] {

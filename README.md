@@ -5,7 +5,7 @@ Using vim golf to grow nvim skills
 ```sh
 nu toolkit.nu get-latest-challenge
 git add -A
-vim -w puzzle-folder/normal-mode.txt puzzle-folder/input.txt
+nu toolkit.nu try-challenge # select challenge, select mode
 nu toolkit.nu run-challenge # select challenge, select mode
 git add -A
 git commit -m 'Solve $PUZZLE'
@@ -27,9 +27,6 @@ git commit -m 'Solve $PUZZLE'
   - [ ] macro mode
   - [ ] insert mode (`vim -c 'startinsert' FILENAME`)
   - [ ] lua (`vim -c 'luafile lua-mode.txt' FILENAME`)
-- Expand to other editors
-  - Helix
-  - kakoune
 
 ## Problems
 
