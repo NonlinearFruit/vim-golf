@@ -114,9 +114,9 @@ export def try-challenge [] {
   | ^fzf --prompt="With Mode: " --reverse --height=20%
 
   match $mode {
-    ex-mode => { try-ex-mode $challenge },
-    normal-mode => { try-normal-mode $challenge }
-    insert-mode => { try-insert-mode $challenge }
+    ex => { try-ex-mode $challenge },
+    normal => { try-normal-mode $challenge }
+    insert => { try-insert-mode $challenge }
   }
 }
 
