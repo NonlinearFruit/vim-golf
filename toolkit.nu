@@ -133,6 +133,32 @@ def try-insert-mode [challenge] {
 }
 
 export def update-readme [] {
+$"
+Using vim golf to grow nvim skills
+
+## Scores
+
+(table-of-scores)
+
+## How To
+
+```sh
+./toolkit.nu get-latest-challenge
+git add -A
+./toolkit.nu try-challenge # select challenge, select mode
+./toolkit.nu run-challenge # select challenge, select mode
+git add -A
+git commit -m \"Solve $PUZZLE in $MODE mode\"
+```
+
+## Help
+
+(help-docs)
+"
+  | save -f README.md
+}
+
+def table-of-scores [] {
   ls */*-mode.txt
   | rename --column { size: score }
   | insert challenge { get name | path parse | get parent }
@@ -148,10 +174,45 @@ export def update-readme [] {
   | default '' ex
   | default '' normal
   | each {|it|
-    $'| ($it.challenge) | ($it.ex) | ($it.normal) |'
+    $"| (row-title $it) | (as-hyperlink $it ex) | (as-hyperlink $it normal) |"
   }
   | prepend ["|challenge|ex|normal|" "|---|---|---|"]
   | str join (char newline)
+}
+
+def row-title [it] {
+  [ $it.challenge README.md ]
+  | path join
+  | open $in
+  | lines
+  | first
+  | str replace "# " ""
+}
+
+def as-hyperlink [it mode] {
+  [ $it.challenge $"($mode)-mode.txt" ] 
+  | path join
+  | $"[($it | get $mode)]\(($in))"
+}
+
+def help-docs [] {
+  scope modules
+  | where name == toolkit
+  | get commands.0.name
+  | each {|cmd|
+    ^nu -c $"use toolkit.nu; toolkit ($cmd) -h"
+    | str trim
+    | $"
+<details><summary>toolkit ($cmd)</summary>
+
+```
+($in)
+```
+</details>
+    "
+  }
+  | to text
+  | ansi strip
 }
 
 def modes [] {

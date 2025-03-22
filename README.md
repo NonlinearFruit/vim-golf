@@ -1,33 +1,128 @@
+
 Using vim golf to grow nvim skills
+
+## Scores
+
+|challenge|ex|normal|
+|---|---|---|
+| [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B](case-matching-substitution/ex-mode.txt) | [](case-matching-substitution/normal-mode.txt) |
+| [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514) | [24 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.txt) | [31 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Circle of fifths with sharps]() | [122 B](circle-of-fifths-with-sharps/ex-mode.txt) | [](circle-of-fifths-with-sharps/normal-mode.txt) |
+| [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B](reordering-properties/ex-mode.txt) | [](reordering-properties/normal-mode.txt) |
+| [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) | [](replace-markdown-sections-with-numbering/ex-mode.txt) | [67 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
+| [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) | [](sort-and-tag/ex-mode.txt) | [64 B](sort-and-tag/normal-mode.txt) |
 
 ## How To
 
 ```sh
-nu toolkit.nu get-latest-challenge
+./toolkit.nu get-latest-challenge
 git add -A
-nu toolkit.nu try-challenge # select challenge, select mode
-nu toolkit.nu run-challenge # select challenge, select mode
+./toolkit.nu try-challenge # select challenge, select mode
+./toolkit.nu run-challenge # select challenge, select mode
 git add -A
-git commit -m 'Solve $PUZZLE'
+git commit -m "Solve $PUZZLE in $MODE mode"
 ```
 
-## Ideas
+## Help
 
-- Generate the readme
-  - Name of problem
-  - Link to folder
-  - Link to vim golf problem
-  - Help docs for toolkit
-  - For each mode:
-      - Name of mode
-      - Number of bytes in file
-- Possible solution constraints
-  - [x] ex mode
-  - [x] normal+visual mode
-  - [ ] macro mode
-  - [ ] insert mode (`vim -c 'startinsert' FILENAME`)
-  - [ ] lua (`vim -c 'luafile lua-mode.txt' FILENAME`)
 
-## Problems
+<details><summary>toolkit download-challenge</summary>
 
-- How to verify solutions in pipeline?
+```
+Usage:
+  > download-challenge <title> <challenge_id> <description> 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Parameters:
+  title <any>
+  challenge_id <any>
+  description <any>
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
+<details><summary>toolkit get-latest-challenge</summary>
+
+```
+Usage:
+  > get-latest-challenge 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
+<details><summary>toolkit run-challenge</summary>
+
+```
+Usage:
+  > run-challenge 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
+<details><summary>toolkit try-challenge</summary>
+
+```
+Usage:
+  > try-challenge 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
+<details><summary>toolkit update-readme</summary>
+
+```
+Usage:
+  > update-readme 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
