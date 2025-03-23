@@ -12,7 +12,7 @@ Using vim golf to grow nvim skills
 | [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B](reordering-properties/ex-mode.txt) | [](reordering-properties/normal-mode.txt) |
 | [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) | [](replace-markdown-sections-with-numbering/ex-mode.txt) | [67 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
 | [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) | [](sort-and-tag/ex-mode.txt) | [64 B](sort-and-tag/normal-mode.txt) |
-| [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d) | [](yaml-to-dotenv/ex-mode.txt) | [45 B](yaml-to-dotenv/normal-mode.txt) |
+| [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d) | [22 B](yaml-to-dotenv/ex-mode.txt) | [45 B](yaml-to-dotenv/normal-mode.txt) |
 
 ## How To
 
