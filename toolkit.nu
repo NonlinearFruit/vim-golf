@@ -70,6 +70,8 @@ export def run-challenge [] {
   | str join (char newline)
   | ^fzf --prompt="With Mode: " --reverse --height=20%
 
+  ^git restore ($challenge | path join input.txt)
+
   match $mode {
     ex-mode => { run-ex-mode $challenge },
     normal-mode => { run-normal-mode $challenge }
