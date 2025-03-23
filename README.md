@@ -7,6 +7,7 @@ Using vim golf to grow nvim skills
 |---|---|---|
 | [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B](case-matching-substitution/ex-mode.txt) | [](case-matching-substitution/normal-mode.txt) |
 | [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514) | [24 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.txt) | [31 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Change class fields from snake case to camel case](https://www.vimgolf.com/challenges/9v006705493c000000000513) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.txt) | [](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Circle of fifths with sharps]() | [122 B](circle-of-fifths-with-sharps/ex-mode.txt) | [](circle-of-fifths-with-sharps/normal-mode.txt) |
 | [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B](reordering-properties/ex-mode.txt) | [](reordering-properties/normal-mode.txt) |
 | [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) | [](replace-markdown-sections-with-numbering/ex-mode.txt) | [67 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
@@ -19,6 +20,7 @@ Using vim golf to grow nvim skills
 git add -A
 ./toolkit.nu try-challenge # select challenge, select mode
 ./toolkit.nu run-challenge # select challenge, select mode
+./toolkit.nu update-readme
 git add -A
 git commit -m "Solve $PUZZLE in $MODE mode"
 ```

@@ -147,6 +147,7 @@ Using vim golf to grow nvim skills
 git add -A
 ./toolkit.nu try-challenge # select challenge, select mode
 ./toolkit.nu run-challenge # select challenge, select mode
+./toolkit.nu update-readme
 git add -A
 git commit -m \"Solve $PUZZLE in $MODE mode\"
 ```
