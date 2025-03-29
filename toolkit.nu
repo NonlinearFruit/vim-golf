@@ -80,7 +80,7 @@ export def run-challenge [
   let input_file = $my_challenge | path join input.txt
   ^git restore $input_file
 
-  match $mode {
+  match $my_mode {
     ex-mode => { run-ex-mode $my_challenge },
     normal-mode => { run-normal-mode $my_challenge }
     insert-mode => { run-insert-mode $my_challenge }
@@ -240,6 +240,7 @@ def modes [] {
   [
     ex
     normal
+    lua
     insert
   ]
 }

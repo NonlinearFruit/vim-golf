@@ -11,7 +11,7 @@ Using vim golf to grow nvim skills
 | [Circle of fifths with sharps]() | [122 B]([circle-of-fifths-with-sharps/ex-mode.txt]) |  |  |
 | [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B]([reordering-properties/ex-mode.txt]) |  |  |
 | [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) |  |  | [67 B]([replace-markdown-sections-with-numbering/normal-mode.txt]) |
-| [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) |  |  | [64 B]([sort-and-tag/normal-mode.txt]) |
+| [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) |  | [625 B]([sort-and-tag/lua-mode.lua]) | [64 B]([sort-and-tag/normal-mode.txt]) |
 | [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d) | [22 B]([yaml-to-dotenv/ex-mode.txt]) | [69 B]([yaml-to-dotenv/lua-mode.lua]) | [45 B]([yaml-to-dotenv/normal-mode.txt]) |
 
 ## How To
