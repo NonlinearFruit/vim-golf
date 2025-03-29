@@ -5,14 +5,14 @@ Using vim golf to grow nvim skills
 
 |challenge|ex|lua|normal|
 |---|---|---|---|
-| [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B]([case-matching-substitution/ex-mode.txt]) |  |  |
-| [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514) | [24 B]([change-class-fields-from-camel-case-to-snake-case/ex-mode.txt]) |  | [31 B]([change-class-fields-from-camel-case-to-snake-case/normal-mode.txt]) |
-| [Change class fields from snake case to camel case](https://www.vimgolf.com/challenges/9v006705493c000000000513) | [19 B]([change-class-fields-from-snake-case-to-camel-case/ex-mode.txt]) |  | [15 B]([change-class-fields-from-snake-case-to-camel-case/normal-mode.txt]) |
-| [Circle of fifths with sharps]() | [122 B]([circle-of-fifths-with-sharps/ex-mode.txt]) |  |  |
-| [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B]([reordering-properties/ex-mode.txt]) |  |  |
-| [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) |  |  | [67 B]([replace-markdown-sections-with-numbering/normal-mode.txt]) |
-| [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) |  | [625 B]([sort-and-tag/lua-mode.lua]) | [64 B]([sort-and-tag/normal-mode.txt]) |
-| [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d) | [22 B]([yaml-to-dotenv/ex-mode.txt]) | [69 B]([yaml-to-dotenv/lua-mode.lua]) | [45 B]([yaml-to-dotenv/normal-mode.txt]) |
+| [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B](case-matching-substitution/ex-mode.txt) |  |  |
+| [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514) | [24 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.txt) |  | [31 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Change class fields from snake case to camel case](https://www.vimgolf.com/challenges/9v006705493c000000000513) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.txt) |  | [15 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
+| [Circle of fifths with sharps]() | [122 B](circle-of-fifths-with-sharps/ex-mode.txt) |  |  |
+| [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f) | [84 B](reordering-properties/ex-mode.txt) |  |  |
+| [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555) |  |  | [67 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
+| [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e) |  | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
+| [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d) | [22 B](yaml-to-dotenv/ex-mode.txt) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
 
 ## How To
 

@@ -212,7 +212,8 @@ def as-hyperlink [record mode] {
   | if ($in | is-empty) {
     ""
   } else {
-    $"[($record | get $mode)]\(($in))"
+    first
+    | $"[($record | get $mode)]\(($in))"
   }
 }
 
