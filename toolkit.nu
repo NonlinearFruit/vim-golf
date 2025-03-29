@@ -55,39 +55,48 @@ export def get-latest-challenge [] {
   null
 }
 
-export def run-challenge [] {
-  let challenge = ls
-  | where type == dir
-  | get name
-  | str join (char newline)
-  | ^fzf --prompt="Run Challenge: " --reverse --height=20%
+export def run-challenge [
+  --challenge = ""
+  --mode = ""
+] {
+  let my_challenge = if $challenge != "" { $challenge } else {
+    ls
+    | where type == dir
+    | get name
+    | str join (char newline)
+    | ^fzf --prompt="Run Challenge: " --reverse --height=20%
+  }
 
-  let mode = ls $challenge
-  | where name =~ mode.txt
-  | get name
-  | path parse
-  | get stem
-  | str join (char newline)
-  | ^fzf --prompt="With Mode: " --reverse --height=20%
+  let my_mode = if $mode != "" { $mode } else {
+    ls $my_challenge
+    | where name =~ '-mode\.'
+    | get name
+    | path parse
+    | get stem
+    | str join (char newline)
+    | ^fzf --prompt="With Mode: " --reverse --height=20%
+  }
 
-  ^git restore ($challenge | path join input.txt)
+  let input_file = $my_challenge | path join input.txt
+  ^git restore $input_file
 
   match $mode {
-    ex-mode => { run-ex-mode $challenge },
-    normal-mode => { run-normal-mode $challenge }
-    insert-mode => { run-insert-mode $challenge }
+    ex-mode => { run-ex-mode $my_challenge },
+    normal-mode => { run-normal-mode $my_challenge }
+    insert-mode => { run-insert-mode $my_challenge }
+    lua-mode => { run-lua-mode $my_challenge }
   }
 
-  ^git diff --exit-code --no-index ($challenge | path join input.txt) ($challenge | path join output.txt)
+  ^git diff --exit-code --no-index $input_file ($my_challenge | path join output.txt)
   | complete
   | if $in.exit_code == 0 {
-    print $"($challenge): Succeed"
+    print $"($my_challenge): Succeed"
   } else {
     print $in.stdout
-    print $"($challenge): Failed"
+    print $"($my_challenge): Failed"
   }
 
-  ^git restore ($challenge | path join input.txt)
+  ^git restore $input_file
 }
 
 def run-ex-mode [challenge] {
@@ -100,8 +109,11 @@ def run-normal-mode [challenge] {
 }
 
 def run-insert-mode [challenge] {
-  print "TODO: Can't run insert mode yet"
-  #^nvim -c 'startinsert' -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+  print "No insert mode support"
+}
+
+def run-lua-mode [challenge] {
+  ^nvim ($challenge | path join input.txt) -l ($challenge | path join lua-mode.lua)
 }
 
 export def try-challenge [] {
@@ -131,7 +143,7 @@ def try-normal-mode [challenge] {
 }
 
 def try-insert-mode [challenge] {
-  ^nvim -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
+  ^nvim --clean -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
 }
 
 export def update-readme [] {
@@ -162,7 +174,7 @@ git commit -m \"Solve $PUZZLE in $MODE mode\"
 }
 
 def table-of-scores [] {
-  ls */*-mode.txt
+  ls */*-mode.*
   | rename --column { size: score }
   | insert challenge { get name | path parse | get parent }
   | insert mode { get name | path parse | get stem | str replace '-mode' '' }
@@ -176,10 +188,11 @@ def table-of-scores [] {
   }
   | default '' ex
   | default '' normal
+  | default '' lua
   | each {|it|
-    $"| (row-title $it) | (as-hyperlink $it ex) | (as-hyperlink $it normal) |"
+    $"| (row-title $it) | (as-hyperlink $it ex) | (as-hyperlink $it lua) | (as-hyperlink $it normal) |"
   }
-  | prepend ["|challenge|ex|normal|" "|---|---|---|"]
+  | prepend ["|challenge|ex|lua|normal|" "|---|---|---|---|"]
   | str join (char newline)
 }
 
@@ -192,10 +205,15 @@ def row-title [it] {
   | str replace "# " ""
 }
 
-def as-hyperlink [it mode] {
-  [ $it.challenge $"($mode)-mode.txt" ] 
-  | path join
-  | $"[($it | get $mode)]\(($in))"
+def as-hyperlink [record mode] {
+  ls $record.challenge
+  | get name
+  | where $it =~ $'($mode)-mode\.'
+  | if ($in | is-empty) {
+    ""
+  } else {
+    $"[($record | get $mode)]\(($in))"
+  }
 }
 
 def help-docs [] {
