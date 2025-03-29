@@ -129,8 +129,9 @@ export def try-challenge [] {
 
   match $mode {
     ex => { try-ex-mode $challenge },
-    normal => { try-normal-mode $challenge }
+    lua => { try-lua-mode $challenge }
     insert => { try-insert-mode $challenge }
+    normal => { try-normal-mode $challenge }
   }
 }
 
@@ -138,12 +139,16 @@ def try-ex-mode [challenge] {
   ^nvim -e -W ($challenge | path join ex-mode.txt) ($challenge | path join input.txt)
 }
 
-def try-normal-mode [challenge] {
-  ^nvim -W ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+def try-lua-mode [challenge] {
+  ^nvim ($challenge | path join lua-mode.lua)
 }
 
 def try-insert-mode [challenge] {
   ^nvim --clean -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
+}
+
+def try-normal-mode [challenge] {
+  ^nvim -W ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
 }
 
 export def update-readme [] {
