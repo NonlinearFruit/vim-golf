@@ -5,7 +5,7 @@ Using vim golf to grow nvim skills
 
 |challenge|ex|lua|normal|
 |---|---|---|---|
-| [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B](case-matching-substitution/ex-mode.txt) |  |  |
+| [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a) | [183 B](case-matching-substitution/ex-mode.txt) |  | [235 B](case-matching-substitution/normal-mode.txt) |
 | [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514) | [24 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.txt) |  | [31 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
 | [Change class fields from snake case to camel case](https://www.vimgolf.com/challenges/9v006705493c000000000513) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.txt) |  | [15 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Circle of fifths with sharps]() | [122 B](circle-of-fifths-with-sharps/ex-mode.txt) |  | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
