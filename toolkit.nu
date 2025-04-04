@@ -105,7 +105,7 @@ def run-ex-mode [challenge] {
 }
 
 def run-normal-mode [challenge] {
-  ^nvim -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+  ^nvim --clean -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
 }
 
 def run-insert-mode [challenge] {
