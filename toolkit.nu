@@ -87,7 +87,7 @@ export def run-challenge [
     lua-mode => { run-lua-mode $my_challenge }
   }
 
-  ^git diff --exit-code --no-index $input_file ($my_challenge | path join output.txt)
+  ^git diff --text --exit-code --no-index $input_file ($my_challenge | path join output.txt)
   | complete
   | if $in.exit_code == 0 {
     print $"($my_challenge): Succeed"
