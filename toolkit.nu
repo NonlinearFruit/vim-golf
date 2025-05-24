@@ -207,7 +207,8 @@ def row-title [it] {
   | open $in
   | lines
   | first
-  | str replace "# " ""
+  | str replace --regex '# \[(.*)\].*' "$1"
+  | $"[($in)]\(($it.challenge))"
 }
 
 def as-hyperlink [record mode] {
