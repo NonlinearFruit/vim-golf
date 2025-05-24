@@ -1,1 +1,4 @@
-/^# kr1€ýanr2€ýannkr3€ýanGr4€ýa:%s/#/.0/0n5jgn2jgnjgZZ
+/^# 
+kr1nr2nnkr3nGr4:%s/#/.0
+/0
+n5jgn2jgnjgZZ
