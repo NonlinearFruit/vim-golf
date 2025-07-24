@@ -1,0 +1,26 @@
+fu! Pi()
+let x=''
+let k=3999
+let p=0
+let q=0
+let t=1000
+let j=0
+let a=[2]
+wh a[j]!=0 && k!=0
+        let p=1+2*k
+        wh j<403
+                if !(k!=(j>2))
+                        let x.=printf("%.3d",a[j-2]%t+q/p/t)
+                en
+                let q=a[j]*k+q%p*t
+                let a[j]=q/p
+                call add(a,0)
+                let j+=1
+        endw
+        let j=0
+        let q=0
+        let a[j]+=2
+        let k-=1
+endw
+retu x
+endf

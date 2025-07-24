@@ -96,16 +96,24 @@ export def run-challenge [
     print $"($my_challenge): Failed"
   }
 
-  ^git restore $input_file
+  # ^git restore $input_file
 }
 
 def run-ex-mode [challenge] {
   open ($challenge | path join ex-mode.txt)
   | ^nvim -e -s ($challenge | path join input.txt)
+  | complete
+  | if $in.exit_code != 0 {
+    print "WARN: nvim exited with error"
+  }
 }
 
 def run-normal-mode [challenge] {
   ^nvim --clean -s ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+  | complete
+  | if $in.exit_code != 0 {
+    print "WARN: nvim exited with error"
+  }
 }
 
 def run-insert-mode [challenge] {
@@ -114,6 +122,10 @@ def run-insert-mode [challenge] {
 
 def run-lua-mode [challenge] {
   ^nvim ($challenge | path join input.txt) -l ($challenge | path join lua-mode.lua)
+  | complete
+  | if $in.exit_code != 0 {
+    print "WARN: nvim exited with error"
+  }
 }
 
 export def try-challenge [] {

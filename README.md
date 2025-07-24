@@ -14,6 +14,7 @@ Using vim golf to grow nvim skills
 | [replace-markdown-sections-with-numbering](replace-markdown-sections-with-numbering) | [90 B](replace-markdown-sections-with-numbering/ex-mode.txt) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | [124 B](sort-and-tag/ex-mode.txt) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [YAML to dotenv](yaml-to-dotenv) | [22 B](yaml-to-dotenv/ex-mode.txt) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
+| [π](π) | [57 B](π/ex-mode.txt) |  |  |
 
 ## How To
 
