@@ -85,6 +85,7 @@ export def run-challenge [
     normal-mode => { run-normal-mode $my_challenge }
     insert-mode => { run-insert-mode $my_challenge }
     lua-mode => { run-lua-mode $my_challenge }
+    _ => { print "Not a valid mode"; exit 1 }
   }
 
   ^git diff --text --exit-code --no-index $input_file ($my_challenge | path join output.txt)
