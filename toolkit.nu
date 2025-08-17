@@ -101,7 +101,7 @@ export def run-challenge [
 }
 
 def run-ex-mode [challenge] {
-  open ($challenge | path join ex-mode.txt)
+  open ($challenge | path join ex-mode.vim)
   | ^nvim -e -s ($challenge | path join input.txt)
   | complete
   | if $in.exit_code != 0 {
@@ -149,7 +149,7 @@ export def try-challenge [] {
 }
 
 def try-ex-mode [challenge] {
-  ^nvim -e -W ($challenge | path join ex-mode.txt) ($challenge | path join input.txt)
+  ^nvim -e -W ($challenge | path join ex-mode.vim) ($challenge | path join input.txt)
 }
 
 def try-lua-mode [challenge] {
