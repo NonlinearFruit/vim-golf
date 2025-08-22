@@ -1,1 +1,1 @@
-dG:so %:call Pi():call append(0, Pi())iu03c0:set nofixeol | x
+cGπ:so %|call append(0, Pi())|set nofixeol|x
