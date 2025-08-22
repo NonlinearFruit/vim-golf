@@ -97,7 +97,7 @@ export def run-challenge [
     print $"($my_challenge): Failed"
   }
 
-  # ^git restore $input_file
+  ^git restore $input_file
 }
 
 def run-ex-mode [challenge] {
