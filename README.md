@@ -5,7 +5,7 @@ Using vim golf to grow nvim skills
 
 |challenge|ex|lua|normal|
 |---|---|---|---|
-| [Case matching substitution](case-matching-substitution) | [157 B](case-matching-substitution/ex-mode.vim) | [626 B](case-matching-substitution/lua-mode.lua) | [235 B](case-matching-substitution/normal-mode.txt) |
+| [Case matching substitution](case-matching-substitution) | [149 B](case-matching-substitution/ex-mode.vim) | [626 B](case-matching-substitution/lua-mode.lua) | [235 B](case-matching-substitution/normal-mode.txt) |
 | [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | [24 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [31 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
 | [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [15 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Circle of fifths with sharps](circle-of-fifths-with-sharps) | [122 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
