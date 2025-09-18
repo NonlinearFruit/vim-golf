@@ -35,15 +35,13 @@ git commit -m "Solve $PUZZLE in $MODE mode"
 
 ```
 Usage:
-  > download-challenge <title> <challenge_id> <description> 
+  > download-challenge <challenge_id> 
 
 Flags:
   -h, --help: Display the help message for this command
 
 Parameters:
-  title <any>
   challenge_id <any>
-  description <any>
 
 Input/output types:
   ╭───┬───────┬────────╮
