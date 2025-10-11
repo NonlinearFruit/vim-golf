@@ -20,6 +20,11 @@ export def download-challenge [challenge_id] {
   vimgolf download-challenge $challenge_id
 }
 
+export def random-challenge [] {
+  use .scripts/vimgolf.nu
+  vimgolf random-challenge
+}
+
 export def run-challenge [
   --challenge = ""
   --mode = ""

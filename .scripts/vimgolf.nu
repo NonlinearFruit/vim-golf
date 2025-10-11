@@ -23,6 +23,51 @@ export def download-challenge [challenge_id] {
   | save-challenge $in
 }
 
+export def random-challenge [] {
+  list-all-challenges
+  | shuffle
+  | first
+  | insert url https://www.vimgolf.com/challenges/($in.id)
+}
+
+def list-all-challenges [] {
+  if not (challenge-cache-exists) {
+    mkdir ("~/.cache/vim-golf" | path expand)
+    list-all-challenges-from-website
+    | save-to-challenge-cache
+  }
+  load-from-challenge-cache
+}
+
+def list-all-challenges-from-website [] {
+  plugin use query
+  generate {|page|
+    http get https://www.vimgolf.com/?page=($page)
+    | query web --query 'h5' --as-html
+    | parse --regex '.*/challenges/(?<id>[^"]+)">(?<title>[^<]+)</a> - (?<entries>\d+) entries.*'
+    | if ($in | is-empty) {
+      {}
+    } else {
+      { out: $in next: ($page + 1) }
+    }
+  } 1
+  | flatten
+}
+
+def challenge-cache-exists [] {
+  "~/.cache/vim-golf/challenges.json"
+  | path exists
+}
+
+def save-to-challenge-cache [] {
+  to json
+  | save "~/.cache/vim-golf/challenges.json" -f
+}
+
+def load-from-challenge-cache [] {
+  open ("~/.cache/vim-golf/challenges.json" | path expand)
+}
+
 def download-challenge-input-and-output [challenge_id] {
   http get $"https://vimgolf.com/challenges/($challenge_id).json"
   | {

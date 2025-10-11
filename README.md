@@ -72,6 +72,25 @@ Input/output types:
 </details>
     
 
+<details><summary>toolkit random-challenge</summary>
+
+```
+Usage:
+  > random-challenge 
+
+Flags:
+  -h, --help: Display the help message for this command
+
+Input/output types:
+  ╭───┬───────┬────────╮
+  │ # │ input │ output │
+  ├───┼───────┼────────┤
+  │ 0 │ any   │ any    │
+  ╰───┴───────┴────────╯
+```
+</details>
+    
+
 <details><summary>toolkit run-challenge</summary>
 
 ```
@@ -79,9 +98,9 @@ Usage:
   > run-challenge {flags} 
 
 Flags:
+  -h, --help: Display the help message for this command
   --challenge <string> (default: '')
   --mode <string> (default: '')
-  -h, --help: Display the help message for this command
 
 Input/output types:
   ╭───┬───────┬────────╮
