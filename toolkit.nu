@@ -26,8 +26,8 @@ export def random-challenge [] {
 }
 
 export def run-challenge [
-  --challenge = ""
-  --mode = ""
+  --challenge (-c) = ""
+  --mode (-m) = ""
 ] {
   use .scripts/challenge.nu
   challenge run-challenge --challenge $challenge --mode $mode
