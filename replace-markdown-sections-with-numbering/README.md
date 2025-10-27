@@ -1,5 +1,5 @@
-# [replace-markdown-sections-with-numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555)
-headers-to-numbers
+# [Replace markdown sections with numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555)
+Replace each section and subsection with their respective numbers
 ## Input
 ```
 # Main Topics
