@@ -85,7 +85,9 @@ def download-challenge-title-and-description [challenge_id] {
 }
 
 def save-challenge [challenge] {
-  let challenge_path = $challenge.title | str downcase | str replace --all -r '\s' '-'
+  const path_to_repo = [(path self) .. ..] | path join | path expand
+  let challenge_dir = $challenge.title | str downcase | str replace --all -r '\s' '-'
+  let challenge_path = [$path_to_repo $challenge_dir] | path join
   mkdir $challenge_path
 
   $challenge.input
