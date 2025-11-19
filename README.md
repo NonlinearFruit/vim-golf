@@ -12,7 +12,7 @@ Using vim golf to grow nvim skills
 | [From brakets to parens](from-brakets-to-parens) | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
 | [Reordering properties](reordering-properties) | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
-| [Rural Post](rural-post) | [20 B](rural-post/ex-mode.vim) |  | [24 B](rural-post/normal-mode.txt) |
+| [Rural Post](rural-post) | [20 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [24 B](rural-post/normal-mode.txt) |
 | [snowflake fractal](snowflake-fractal) |  |  | [55 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | [124 B](sort-and-tag/ex-mode.vim) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [YAML to dotenv](yaml-to-dotenv) | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
