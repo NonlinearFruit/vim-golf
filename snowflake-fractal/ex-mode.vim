@@ -1,0 +1,37 @@
+let a="X X   X X         X X   X X"
+let b=" X     X           X     X"
+let c="   X X               X X"
+let d="    X                 X"
+let e="         X X   X X"
+let f="          X     X"
+let g="            X X"
+let h="             X"
+put =a
+1d
+put =b
+put =a
+put =c
+put =d
+put =c
+put =a
+put =b
+put =a
+put =e
+put =f
+put =e
+put =g
+put =h
+put =g
+put =e
+put =f
+put =e
+put =a
+put =b
+put =a
+put =c
+put =d
+put =c
+put =a
+put =b
+put =a
+x
