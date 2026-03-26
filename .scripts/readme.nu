@@ -32,30 +32,30 @@ def table-of-scores [] {
   | insert mode { get name | path parse | get stem | str replace '-mode' '' }
   | group-by challenge
   | transpose challenge data
-  | each {|it|
-    $it.data
-    | reduce --fold { challenge: $it.challenge } {|it, acc|
-      $acc | insert $it.mode $it.score
+  | each {|x|
+    $x.data
+    | reduce --fold { challenge: $x.challenge } {|y, acc|
+      $acc | insert $y.mode $y.score
     }
   }
   | default '' ex
   | default '' normal
   | default '' lua
-  | each {|it|
-    $"| (row-title $it) | (as-hyperlink $it ex) | (as-hyperlink $it lua) | (as-hyperlink $it normal) |"
+  | each {|x|
+    $"| (row-title $x) | (as-hyperlink $x ex) | (as-hyperlink $x lua) | (as-hyperlink $x normal) |"
   }
   | prepend ["|challenge|ex|lua|normal|" "|---|---|---|---|"]
   | str join (char newline)
 }
 
-def row-title [it] {
-  [ $it.challenge README.md ]
+def row-title [x] {
+  [ $x.challenge README.md ]
   | path join
   | open $in
   | lines
   | first
   | str replace --regex '# \[(.*)\].*' "$1"
-  | $"[($in)]\(($it.challenge))"
+  | $"[($in)]\(($x.challenge))"
 }
 
 def as-hyperlink [record mode] {

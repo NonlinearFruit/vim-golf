@@ -14,6 +14,7 @@ Using vim golf to grow nvim skills
 | [Reordering properties](reordering-properties) | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
 | [Rural Post](rural-post) | [20 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [24 B](rural-post/normal-mode.txt) |
+| [Simple text editing with Vim](simple-text-editing-with-vim) | [26 B](simple-text-editing-with-vim/ex-mode.vim) |  |  |
 | [snowflake fractal](snowflake-fractal) | [430 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [55 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | [124 B](sort-and-tag/ex-mode.vim) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [YAML to dotenv](yaml-to-dotenv) | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
@@ -38,7 +39,7 @@ git commit -m "Solve $PUZZLE in $MODE mode"
 
 ```
 Usage:
-  > download-challenge <challenge_id> 
+  > toolkit download-challenge <challenge_id> 
 
 Flags:
   -h, --help: Display the help message for this command
@@ -60,7 +61,7 @@ Input/output types:
 
 ```
 Usage:
-  > get-latest-challenge 
+  > toolkit get-latest-challenge 
 
 Flags:
   -h, --help: Display the help message for this command
@@ -79,7 +80,7 @@ Input/output types:
 
 ```
 Usage:
-  > random-challenge 
+  > toolkit random-challenge 
 
 Flags:
   -h, --help: Display the help message for this command
@@ -98,7 +99,7 @@ Input/output types:
 
 ```
 Usage:
-  > run-challenge {flags} 
+  > toolkit run-challenge {flags} 
 
 Flags:
   -h, --help: Display the help message for this command
@@ -119,7 +120,7 @@ Input/output types:
 
 ```
 Usage:
-  > try-challenge 
+  > toolkit try-challenge 
 
 Flags:
   -h, --help: Display the help message for this command
@@ -138,7 +139,7 @@ Input/output types:
 
 ```
 Usage:
-  > update-readme 
+  > toolkit update-readme 
 
 Flags:
   -h, --help: Display the help message for this command
