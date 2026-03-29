@@ -17,7 +17,7 @@ Using vim golf to grow nvim skills
 | [Simple text editing with Vim](simple-text-editing-with-vim) | [26 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
 | [snowflake fractal](snowflake-fractal) | [430 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [55 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | [124 B](sort-and-tag/ex-mode.vim) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
-| [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) |  |  | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
+| [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) |  | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
 | [YAML to dotenv](yaml-to-dotenv) | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
 | [π](π) | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [48 B](π/normal-mode.txt) |
 
