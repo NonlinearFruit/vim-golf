@@ -42,9 +42,9 @@ def table-of-scores [] {
   | default '' normal
   | default '' lua
   | each {|x|
-    $"| (row-title $x) | (as-hyperlink $x ex) | (as-hyperlink $x lua) | (as-hyperlink $x normal) |"
+    $"| (row-title $x) | (top-score $x) | (as-hyperlink $x ex) | (as-hyperlink $x lua) | (as-hyperlink $x normal) |"
   }
-  | prepend ["|challenge|ex|lua|normal|" "|---|---|---|---|"]
+  | prepend ["|challenge|best|ex|lua|normal|" "|---|---|---|---|---|"]
   | str join (char newline)
 }
 
@@ -56,6 +56,23 @@ def row-title [x] {
   | first
   | str replace --regex '# \[(.*)\].*' "$1"
   | $"[($in)]\(($x.challenge))"
+}
+
+def top-score [x] {
+  plugin use query
+  print $x.challenge
+  [ $x.challenge README.md ]
+  | path join
+  | open $in
+  | lines
+  | first
+  | str replace --regex '# \[.*\]\((.*)\)' "$1"
+  | $"($in).html"
+  | http get $in
+  | query web -q '.grid_5 > .clearfix > div > b > a'
+  | flatten
+  | into int
+  | math min
 }
 
 def as-hyperlink [record mode] {
