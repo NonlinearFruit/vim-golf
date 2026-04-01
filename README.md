@@ -21,7 +21,7 @@ Using vim golf to grow nvim skills
 | [YAML to dotenv](yaml-to-dotenv) | 16 | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
 | [π](π) | 16 | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [48 B](π/normal-mode.txt) |
 
-## How To
+## How To (local)
 
 ```sh
 ./toolkit.nu get-latest-challenge
@@ -31,6 +31,12 @@ git add -A
 ./toolkit.nu update-readme
 git add -A
 git commit -m "Solve $PUZZLE in $MODE mode"
+```
+
+# How To (vimgolf.com)
+
+```sh
+podman run --rm -it -e key=$VIMGOLF_KEY ghcr.io/filbranden/vimgolf $CHALLENGE_ID
 ```
 
 ## Help

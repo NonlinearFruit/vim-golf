@@ -6,7 +6,7 @@ Using vim golf to grow nvim skills
 
 (table-of-scores)
 
-## How To
+## How To \(local)
 
 ```sh
 ./toolkit.nu get-latest-challenge
@@ -16,6 +16,12 @@ git add -A
 ./toolkit.nu update-readme
 git add -A
 git commit -m \"Solve $PUZZLE in $MODE mode\"
+```
+
+# How To \(vimgolf.com)
+
+```sh
+podman run --rm -it -e key=$VIMGOLF_KEY ghcr.io/filbranden/vimgolf $CHALLENGE_ID
 ```
 
 ## Help
