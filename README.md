@@ -13,7 +13,7 @@ Using vim golf to grow nvim skills
 | [From brakets to parens](from-brakets-to-parens) | 24 | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
 | [Reordering properties](reordering-properties) | 24 | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
-| [Rural Post](rural-post) | 9 | [20 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [24 B](rural-post/normal-mode.txt) |
+| [Rural Post](rural-post) | 9 | [18 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [24 B](rural-post/normal-mode.txt) |
 | [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
 | [snowflake fractal](snowflake-fractal) | 26 | [430 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [55 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | 36 | [124 B](sort-and-tag/ex-mode.vim) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
