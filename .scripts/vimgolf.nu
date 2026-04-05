@@ -16,6 +16,7 @@ export def download-challenge [challenge_id] {
   }
   | merge (download-challenge-title-and-description $in.id)
   | merge (download-challenge-input-and-output $in.id)
+  | insert frontmatter (create-frontmatter $in)
   | tee { print $"Downloaded: ($in.title)" }
   | save-challenge $in
 }
@@ -78,7 +79,14 @@ def download-challenge-title-and-description [challenge_id] {
   | {
     title: ($in | query web --query '#content h3 b' | flatten | first)
     description: ($in | query web --query '#content p' | flatten | first)
+    best: ($in | query web -q '.grid_5 > .clearfix > div > b > a' | flatten | into int | math min)
+    url: $'https://www.vimgolf.com/challenges/($challenge_id)'
   }
+}
+
+def create-frontmatter [challenge] {
+  $challenge
+  | select id title url best
 }
 
 def save-challenge [challenge] {
@@ -93,7 +101,10 @@ def save-challenge [challenge] {
   | save -f ([$challenge_path output.txt] | path join)
 
   [
-    $"# [($challenge.title)]\(https://www.vimgolf.com/challenges/($challenge.id))"
+    "<!--"
+    ($challenge.frontmatter | to yaml)
+    "-->"
+    $"# [($challenge.title)]\(($challenge.url))"
     $challenge.description
     "## Input"
     "```"
