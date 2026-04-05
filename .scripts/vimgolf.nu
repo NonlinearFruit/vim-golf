@@ -3,15 +3,11 @@ export def get-latest-challenge [] {
   | get content.content.0
   | where tag == item
   | get 0.content
-  | {
-    title: ($in | where tag == title | get 0.content.0.content)
-    id: ($in | where tag == link | get 0.content.0.content | parse 'https://www.vimgolf.com/challenges/{challenge_id}' | get 0.challenge_id)
-    description: ($in | where tag == description | get 0.content.0.content)
-  }
-  | merge (download-challenge-input-and-output $in.id)
-  | tee { print $"Downloaded: ($in.title)" }
-  | save-challenge $in
-  | ignore
+  | where tag == link
+  | get 0.content.0.content
+  | parse 'https://www.vimgolf.com/challenges/{challenge_id}'
+  | get 0.challenge_id
+  | download-challenge $in
 }
 
 export def download-challenge [challenge_id] {
@@ -20,6 +16,7 @@ export def download-challenge [challenge_id] {
   }
   | merge (download-challenge-title-and-description $in.id)
   | merge (download-challenge-input-and-output $in.id)
+  | tee { print $"Downloaded: ($in.title)" }
   | save-challenge $in
 }
 
