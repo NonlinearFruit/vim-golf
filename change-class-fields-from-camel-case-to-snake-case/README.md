@@ -1,3 +1,9 @@
+<!--
+id: 9v0067056336000000000514
+url: https://www.vimgolf.com/challenges/9v0067056336000000000514
+title: Change class fields from camel case to snake case
+best: 18
+-->
 # [Change class fields from camel case to snake case](https://www.vimgolf.com/challenges/9v0067056336000000000514)
 This is the reverse of the previous challenge: https://www.vimgolf.com/challenges/9v006705493c000000000513
 ## Input

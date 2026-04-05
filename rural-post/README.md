@@ -1,3 +1,9 @@
+<!--
+id: 5f1e0217becb80000692b9c4
+url: https://www.vimgolf.com/challenges/5f1e0217becb80000692b9c4
+title: Rural Post
+best: 9
+-->
 # [Rural Post](https://www.vimgolf.com/challenges/5f1e0217becb80000692b9c4)
 Simple challenge to remove all but the post code on each line
 ## Input

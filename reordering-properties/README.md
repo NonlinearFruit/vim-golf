@@ -1,3 +1,9 @@
+<!--
+id: 9v0067a47b9200000000069f
+url: https://www.vimgolf.com/challenges/9v0067a47b9200000000069f
+title: Reordering properties
+best: 24
+-->
 # [Reordering properties](https://www.vimgolf.com/challenges/9v0067a47b9200000000069f)
 Arrange the CSS lines for the #topbar selector based on their complete line length, from shortest to longest.
 ## Input

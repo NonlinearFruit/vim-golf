@@ -1,3 +1,9 @@
+<!--
+id: 9v006661427f00000000027a
+url: https://www.vimgolf.com/challenges/9v006661427f00000000027a
+title: Case matching substitution
+best: 31
+-->
 # [Case matching substitution](https://www.vimgolf.com/challenges/9v006661427f00000000027a)
 Swap every "lorem" for "ipsum", keeping the letter cases the same.
 ## Input

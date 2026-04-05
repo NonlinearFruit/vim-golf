@@ -1,3 +1,9 @@
+<!--
+id: 50525d0730c82d0002000077
+url: https://www.vimgolf.com/challenges/50525d0730c82d0002000077
+title: Circle of fifths with sharps
+best: 24
+-->
 # [Circle of fifths with sharps](https://www.vimgolf.com/challenges/50525d0730c82d0002000077)
 
 ## Input

@@ -1,3 +1,9 @@
+<!--
+id: 9v00671803aa000000000555
+url: https://www.vimgolf.com/challenges/9v00671803aa000000000555
+title: Replace markdown sections with numbering
+best: 29
+-->
 # [Replace markdown sections with numbering](https://www.vimgolf.com/challenges/9v00671803aa000000000555)
 Replace each section and subsection with their respective numbers
 ## Input

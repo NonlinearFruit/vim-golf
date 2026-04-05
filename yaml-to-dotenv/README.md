@@ -1,3 +1,9 @@
+<!--
+id: 9v00674f1bfb00000000063d
+url: https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d
+title: YAML to dotenv
+best: 16
+-->
 # [YAML to dotenv](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d)
 Convert this YAML config file to a .env file.
 ## Input

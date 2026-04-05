@@ -1,3 +1,9 @@
+<!--
+id: 9v00686695ea000000000723
+url: https://www.vimgolf.com/challenges/9v00686695ea000000000723
+title: From brakets to parens
+best: 24
+-->
 # [From brakets to parens](https://www.vimgolf.com/challenges/9v00686695ea000000000723)
 This is one of the most common problem when you wrap an array for error handling. Vim is useful when you convert foo[i][j][k] into foo(i, j, k) for many times.
 ## Input

@@ -1,3 +1,9 @@
+<!--
+id: 50b746da523acc0002000018
+url: https://www.vimgolf.com/challenges/50b746da523acc0002000018
+title: Checkerboard case pattern
+best: 15
+-->
 # [Checkerboard case pattern](https://www.vimgolf.com/challenges/50b746da523acc0002000018)
 All the squares are white. Make some of them black. But only the right ones.
 ## Input

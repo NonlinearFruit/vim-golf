@@ -38,12 +38,13 @@ def table-of-scores [] {
   | insert mode { get name | path parse | get stem | str replace '-mode' '' }
   | group-by challenge
   | transpose challenge data
-  | each {|x|
-    $x.data
-    | reduce --fold { challenge: $x.challenge } {|y, acc|
-      $acc | insert $y.mode $y.score
+  | each {|group|
+    $group.data
+    | reduce --fold { challenge: $group.challenge } {|soln, acc|
+      $acc | insert $soln.mode $soln.score
     }
   }
+  | insert frontmatter { get-frontmatter $in.challenge }
   | default '' ex
   | default '' normal
   | default '' lua
@@ -54,31 +55,27 @@ def table-of-scores [] {
   | str join (char newline)
 }
 
-def row-title [x] {
-  [ $x.challenge README.md ]
+def get-frontmatter [challenge_dir] {
+  [ $challenge_dir README.md ]
   | path join
   | open $in
-  | lines
-  | first
-  | str replace --regex '# \[(.*)\].*' "$1"
-  | $"[($in)]\(($x.challenge))"
+  | if $in =~ "^<!--" {
+    str replace --multiline --regex '<!--\s+((.|\n)*)-->(.|\n)*' "$1"
+    | from yaml
+  } else {
+    {}
+  }
+  | insert directory $challenge_dir
+}
+
+def row-title [x] {
+  $x.frontmatter?
+  | $"[($in.title?)]\(($in.directory?))"
 }
 
 def top-score [x] {
-  plugin use query
-  print $x.challenge
-  [ $x.challenge README.md ]
-  | path join
-  | open $in
-  | lines
-  | first
-  | str replace --regex '# \[.*\]\((.*)\)' "$1"
-  | $"($in).html"
-  | http get $in
-  | query web -q '.grid_5 > .clearfix > div > b > a'
-  | flatten
-  | into int
-  | math min
+  $x.frontmatter?
+  | get best?
 }
 
 def as-hyperlink [record mode] {

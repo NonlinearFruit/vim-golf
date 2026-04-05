@@ -1,3 +1,9 @@
+<!--
+id: 9v006763eed900000000067e
+url: https://www.vimgolf.com/challenges/9v006763eed900000000067e
+title: Sort and Tag
+best: 36
+-->
 # [Sort and Tag](https://www.vimgolf.com/challenges/9v006763eed900000000067e)
 The goal is to sort these lines alphabetically, assign a unique identifier to each line in the format "[01]", "[02]", etc., and then restore the original order of the lines while preserving the assigned identifiers.
 ## Input

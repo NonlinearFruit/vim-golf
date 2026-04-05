@@ -1,3 +1,9 @@
+<!--
+id: 9v006705493c000000000513
+url: https://www.vimgolf.com/challenges/9v006705493c000000000513
+title: Change class fields from snake case to camel case
+best: 13
+-->
 # [Change class fields from snake case to camel case](https://www.vimgolf.com/challenges/9v006705493c000000000513)
 Change the class fields in this Scala class from snake case to camel case
 ## Input

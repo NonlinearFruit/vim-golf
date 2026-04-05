@@ -1,3 +1,9 @@
+<!--
+id: 9v0068583e17000000000702
+url: https://www.vimgolf.com/challenges/9v0068583e17000000000702
+title: π
+best: 16
+-->
 # [π](https://www.vimgolf.com/challenges/9v0068583e17000000000702)
 1200 π chars
 ## Input

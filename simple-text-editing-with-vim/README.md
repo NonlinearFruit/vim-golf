@@ -1,3 +1,9 @@
+<!--
+id: 4d1a34ccfa85f32065000004
+url: https://www.vimgolf.com/challenges/4d1a34ccfa85f32065000004
+title: Simple text editing with Vim
+best: 13
+-->
 # [Simple text editing with Vim](https://www.vimgolf.com/challenges/4d1a34ccfa85f32065000004)
 Make the pairs of lines match up by making each second line same as first
 ## Input
