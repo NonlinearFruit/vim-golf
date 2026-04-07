@@ -4,7 +4,7 @@
 ![Average best score](https://img.shields.io/badge/best-20.7-blue)
 ![Average ex score](https://img.shields.io/badge/ex-81.1-teal)
 ![Average lua score](https://img.shields.io/badge/lua-342.5-orange)
-![Average normal score](https://img.shields.io/badge/normal-53.4-purple)
+![Average normal score](https://img.shields.io/badge/normal-53.3-purple)
 ![Number of solutions missing](https://img.shields.io/badge/missing-1-red)
 
 
@@ -24,7 +24,7 @@ Using vim golf to grow nvim skills
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
 | [Rural Post](rural-post) | 9 | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
 | [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
-| [snowflake fractal](snowflake-fractal) | 26 | [430 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [55 B](snowflake-fractal/normal-mode.txt) |
+| [snowflake fractal](snowflake-fractal) | 26 | [430 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | 36 | [124 B](sort-and-tag/ex-mode.vim) | [625 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | 16 | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) |  | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
 | [YAML to dotenv](yaml-to-dotenv) | 16 | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
