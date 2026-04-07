@@ -1,4 +1,13 @@
 
+[![NonlinearFruit's vimgolf profile](https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim)](https://www.vimgolf.com/38899/NonlinearFruit)
+![Number of solved challenges](https://img.shields.io/badge/challenges-15-yellow)
+![Average best score](https://img.shields.io/badge/best-20.7-blue)
+![Average ex score](https://img.shields.io/badge/ex-81.1-teal)
+![Average lua score](https://img.shields.io/badge/lua-342.5-orange)
+![Average normal score](https://img.shields.io/badge/normal-53.4-purple)
+![Number of solutions missing](https://img.shields.io/badge/missing-1-red)
+
+
 Using vim golf to grow nvim skills
 
 ## Scores

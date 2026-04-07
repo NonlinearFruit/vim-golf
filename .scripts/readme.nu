@@ -1,5 +1,7 @@
 export def update [] {
 $"
+(badges)
+
 Using vim golf to grow nvim skills
 
 ## Scores
@@ -31,10 +33,74 @@ podman run --rm -it -e key=$VIMGOLF_KEY ghcr.io/filbranden/vimgolf $CHALLENGE_ID
   | save -f README.md
 }
 
+def badges [] {
+  [
+    [label      message        display        alt                                link];
+    [vimgolf    nonlinearfruit green?logo=vim "NonlinearFruit's vimgolf profile" https://www.vimgolf.com/38899/NonlinearFruit]
+    [challenges (challenges)   yellow         "Number of solved challenges"      null]
+    [best       (avg-best)     blue           "Average best score"               null]
+    [ex         (avg-ex)       teal           "Average ex score"                 null]
+    [lua        (avg-lua)      orange         "Average lua score"                null]
+    [normal     (avg-normal)   purple         "Average normal score"             null]
+    [missing    (missing)      red            "Number of solutions missing"      null]
+  ]
+  | each {|badge|
+    $"![($badge.alt)]\(https://img.shields.io/badge/($badge.label)-($badge.message)-($badge.display))"
+    | if $badge.link? != null {
+      $"[($in)]\(($badge.link))"
+    } else $in
+  }
+  | to text
+}
+
+def challenges [] {
+  ls | where type == dir | length
+}
+
+def avg-best [] {
+  ls
+  | where type == dir
+  | get name
+  | each { get-frontmatter $in }
+  | get best
+  | math avg
+  | math round --precision 1
+}
+
+def avg-ex [] {
+  ls */ex-mode.vim
+  | get size
+  | each { $in / 1B }
+  | math avg
+  | math round --precision 1
+}
+
+def avg-lua [] {
+  ls */lua-mode.lua
+  | get size
+  | each { $in / 1B }
+  | math avg
+  | math round --precision 1
+}
+
+def avg-normal [] {
+  ls */normal-mode.txt
+  | get size
+  | each { $in / 1B }
+  | math avg
+  | math round --precision 1
+}
+
+def missing [] {
+  ls */*-mode.*
+  | length
+  | ((challenges) * 3) - $in
+}
+
 def table-of-scores [] {
   ls */*-mode.*
   | rename --column { size: score }
-  | insert challenge { get name | path parse | get parent }
+  | insert challenge { get name | path dirname }
   | insert mode { get name | path parse | get stem | str replace '-mode' '' }
   | group-by challenge
   | transpose challenge data
