@@ -1,11 +1,11 @@
 
 [![NonlinearFruit's vimgolf profile](https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim)](https://www.vimgolf.com/38899/NonlinearFruit)
-![Number of solved challenges](https://img.shields.io/badge/challenges-15-yellow)
-![Average best score](https://img.shields.io/badge/best-20.7-blue)
-![Average ex score](https://img.shields.io/badge/ex-81.1-teal)
+![Number of solved challenges](https://img.shields.io/badge/challenges-16-yellow)
+![Average best score](https://img.shields.io/badge/best-21.2-blue)
+![Average ex score](https://img.shields.io/badge/ex-78.1-teal)
 ![Average lua score](https://img.shields.io/badge/lua-342.5-orange)
 ![Average normal score](https://img.shields.io/badge/normal-53.3-purple)
-![Number of solutions missing](https://img.shields.io/badge/missing-1-red)
+![Number of solutions missing](https://img.shields.io/badge/missing-3-red)
 
 
 Using vim golf to grow nvim skills
@@ -19,6 +19,7 @@ Using vim golf to grow nvim skills
 | [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Checkerboard case pattern](checkerboard-case-pattern) | 15 | [31 B](checkerboard-case-pattern/ex-mode.vim) | [100 B](checkerboard-case-pattern/lua-mode.lua) | [28 B](checkerboard-case-pattern/normal-mode.txt) |
 | [Circle of fifths with sharps](circle-of-fifths-with-sharps) | 24 | [107 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
+| [Flip All Bits](flip-all-bits) | 29 | [33 B](flip-all-bits/ex-mode.vim) |  |  |
 | [From brakets to parens](from-brakets-to-parens) | 24 | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
 | [Reordering properties](reordering-properties) | 24 | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
