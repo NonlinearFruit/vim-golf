@@ -1,8 +1,12 @@
 export def update [] {
 $"
-(badges)
+<div align=\"center\">
 
-Using vim golf to grow nvim skills
+  <img src=\"nvim-golf.svg\" alt=\"nvim golf icon\" width=\"400\" height=\"400\"/>
+
+  (badges)
+
+</div>
 
 ## Scores
 
@@ -45,10 +49,12 @@ def badges [] {
     [missing    (missing)      red            "Number of solutions missing"      null]
   ]
   | each {|badge|
-    $"![($badge.alt)]\(https://img.shields.io/badge/($badge.label)-($badge.message)-($badge.display))"
+    $"<img alt=\"($badge.alt)\" src=\"https://img.shields.io/badge/($badge.label)-($badge.message)-($badge.display)\">"
     | if $badge.link? != null {
-      $"[($in)]\(($badge.link))"
-    } else $in
+      $"<a href=\"($badge.link)\">($in)</a>"
+    } else {
+      $"<a href=\"\">($in)</a>"
+    }
   }
   | to text
 }

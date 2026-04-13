@@ -1,14 +1,18 @@
 
-[![NonlinearFruit's vimgolf profile](https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim)](https://www.vimgolf.com/38899/NonlinearFruit)
-![Number of solved challenges](https://img.shields.io/badge/challenges-16-yellow)
-![Average best score](https://img.shields.io/badge/best-21.2-blue)
-![Average ex score](https://img.shields.io/badge/ex-78.1-teal)
-![Average lua score](https://img.shields.io/badge/lua-342.5-orange)
-![Average normal score](https://img.shields.io/badge/normal-53.3-purple)
-![Number of solutions missing](https://img.shields.io/badge/missing-3-red)
+<div align="center">
+
+  <img src="nvim-golf.svg" alt="nvim golf icon" width="400" height="400"/>
+
+  <a href="https://www.vimgolf.com/38899/NonlinearFruit"><img alt="NonlinearFruit's vimgolf profile" src="https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim"></a>
+<a href=""><img alt="Number of solved challenges" src="https://img.shields.io/badge/challenges-16-yellow"></a>
+<a href=""><img alt="Average best score" src="https://img.shields.io/badge/best-21.2-blue"></a>
+<a href=""><img alt="Average ex score" src="https://img.shields.io/badge/ex-78.1-teal"></a>
+<a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-342.5-orange"></a>
+<a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-53.3-purple"></a>
+<a href=""><img alt="Number of solutions missing" src="https://img.shields.io/badge/missing-3-red"></a>
 
 
-Using vim golf to grow nvim skills
+</div>
 
 ## Scores
 
