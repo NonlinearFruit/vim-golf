@@ -1,37 +1,17 @@
-let a="X X   X X         X X   X X"
-let b=" X     X           X     X"
-let c="   X X               X X"
-let d="    X                 X"
-let e="         X X   X X"
-let f="          X     X"
-let g="            X X"
-let h="             X"
-put =a
+put ='X X   X X         X X   X X'
 1d
-put =b
-put =a
-put =c
-put =d
-put =c
-put =a
-put =b
-put =a
-put =e
-put =f
-put =e
-put =g
-put =h
-put =g
-put =e
-put =f
-put =e
-put =a
-put =b
-put =a
-put =c
-put =d
-put =c
-put =a
-put =b
-put =a
+put =' X     X           X     X'
+-t$
+put ='   X X               X X'
+put ='    X                 X'
+-t$
+1,3t$
+put ='         X X   X X'
+put ='          X     X'
+-t$
+put ='            X X'
+put ='             X'
+-t$
+10,12t$
+1,9t$
 x

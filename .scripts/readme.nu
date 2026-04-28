@@ -130,7 +130,7 @@ def table-of-scores [] {
 def get-frontmatter [challenge_dir] {
   [ $challenge_dir README.md ]
   | path join
-  | open $in
+  | open --raw $in
   | if $in =~ "^<!--" {
     str replace --multiline --regex '<!--\s+((.|\n)*)-->(.|\n)*' "$1"
     | from yaml
