@@ -1,10 +1,3 @@
-%y i
-sort
-g/_/d
-%norm I[00] 
-norm GVggg
-$
-pu i
-g/]/ exe 'norm $"pyiw"ldd' | exe '%s/' . @p . '/' . @l . '/'
-v/_/ norm $x
+let s=sort(getline(1,'$'))
+%s/\ze\u/\=printf("[%02d] ",index(s,getline('.'))+1)/
 x
