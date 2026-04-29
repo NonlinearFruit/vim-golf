@@ -1,3 +1,6 @@
-let s=sort(getline(1,'$'))
-%s/\ze\u/\=printf("[%02d] ",index(s,getline('.'))+1)/
+%s/^/\=line('.')
+sor /\d*/
+%s/\ze\u/\=printf("[%02d] ",line('.'))
+sor n
+%s/\d*
 x
