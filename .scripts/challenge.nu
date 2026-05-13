@@ -26,7 +26,6 @@ export def run-challenge [
   match $my_mode {
     ex-mode => { run-ex-mode $my_challenge },
     normal-mode => { run-normal-mode $my_challenge }
-    insert-mode => { run-insert-mode $my_challenge }
     lua-mode => { run-lua-mode $my_challenge }
     _ => { print "Not a valid mode"; exit 1 }
   }
@@ -57,7 +56,6 @@ export def try-challenge [] {
   match $mode {
     ex => { try-ex-mode $challenge },
     lua => { try-lua-mode $challenge }
-    insert => { try-insert-mode $challenge }
     normal => { try-normal-mode $challenge }
   }
 }
@@ -79,10 +77,6 @@ def run-normal-mode [challenge] {
   }
 }
 
-def run-insert-mode [challenge] {
-  print "No insert mode support"
-}
-
 def run-lua-mode [challenge] {
   ^nvim ($challenge | path join input.txt) -l ($challenge | path join lua-mode.lua)
   | complete
@@ -99,10 +93,6 @@ def try-lua-mode [challenge] {
   ^nvim ($challenge | path join lua-mode.lua)
 }
 
-def try-insert-mode [challenge] {
-  ^nvim --clean -c 'startinsert' -W ($challenge | path join insert-mode.txt) ($challenge | path join input.txt)
-}
-
 def try-normal-mode [challenge] {
   ^nvim -W ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
 }
@@ -112,6 +102,5 @@ def modes [] {
     ex
     normal
     lua
-    insert
   ]
 }
