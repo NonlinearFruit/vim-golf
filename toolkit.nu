@@ -33,9 +33,12 @@ export def run-challenge [
   challenge run-challenge --challenge $challenge --mode $mode
 }
 
-export def try-challenge [] {
+export def try-challenge [
+  --challenge (-c) = ""
+  --mode (-m) = ""
+] {
   use .scripts/challenge.nu
-  challenge try-challenge
+  challenge try-challenge --challenge $challenge --mode $mode
 }
 
 export def update-readme [] {

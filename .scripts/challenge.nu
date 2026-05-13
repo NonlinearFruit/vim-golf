@@ -42,16 +42,23 @@ export def run-challenge [
   ^git restore $input_file
 }
 
-export def try-challenge [] {
-  let challenge = ls
-  | where type == dir
-  | get name
-  | str join (char newline)
-  | ^fzf --prompt="Try Challenge: " --reverse --height=20%
+export def try-challenge [
+  --challenge = ""
+  --mode = ""
+] {
+  let my_challenge = if $challenge != "" { $challenge } else {
+    ls
+    | where type == dir
+    | get name
+    | str join (char newline)
+    | ^fzf --prompt="Try Challenge: " --reverse --height=20%
+  }
 
-  let mode = modes
-  | str join (char newline)
-  | ^fzf --prompt="With Mode: " --reverse --height=20%
+  let my_mode = if $mode != "" { $mode } else {
+    modes
+    | str join (char newline)
+    | ^fzf --prompt="With Mode: " --reverse --height=20%
+  }
 
   match $mode {
     ex => { try-ex-mode $challenge },

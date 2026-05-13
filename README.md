@@ -141,10 +141,12 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit try-challenge 
+  > toolkit try-challenge {flags} 
 
 Flags:
   -h, --help: Display the help message for this command
+  -c, --challenge <string> (default: '')
+  -m, --mode <string> (default: '')
 
 Input/output types:
   ╭───┬───────┬────────╮
