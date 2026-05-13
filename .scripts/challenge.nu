@@ -19,14 +19,15 @@ export def run-challenge [
     | str join (char newline)
     | ^fzf --prompt="With Mode: " --reverse --height=20%
   }
+  | str replace "-mode" ""
 
   let input_file = $my_challenge | path join input.txt
   ^git restore $input_file
 
   match $my_mode {
-    ex-mode => { run-ex-mode $my_challenge },
-    normal-mode => { run-normal-mode $my_challenge }
-    lua-mode => { run-lua-mode $my_challenge }
+    ex => { run-ex-mode $my_challenge },
+    normal => { run-normal-mode $my_challenge }
+    lua => { run-lua-mode $my_challenge }
     _ => { print "Not a valid mode"; exit 1 }
   }
 
