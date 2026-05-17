@@ -43,5 +43,5 @@ export def try-challenge [
 
 export def update-readme [] {
   use .scripts/readme.nu
-  readme update
+  readme remake
 }

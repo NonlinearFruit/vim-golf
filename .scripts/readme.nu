@@ -1,4 +1,4 @@
-export def update [] {
+export def remake [] {
 $"
 <div align=\"center\">
 
@@ -11,6 +11,12 @@ $"
 ## Scores
 
 (table-of-scores)
+
+<details><summary>History</summary>
+
+(graphs)
+
+</details>
 
 ## How To \(local)
 
@@ -180,4 +186,52 @@ def help-docs [] {
   }
   | to text
   | ansi strip
+}
+
+export def graphs [] {
+  let commit_that_introduced_badges = '7b37ab8'
+  ^git log --format=%H+%as $"($commit_that_introduced_badges).."
+  | lines
+  | each {|log|
+    $log
+    | split row '+'
+    | let pair
+    ^git show $"($pair.0):README.md"
+    | lines
+    | where $it =~ 'shields'
+    | parse '{_}badge/{type}-{score}-{_}'
+    | each { insert date $pair.1 }
+  }
+  | flatten
+  | where type != vimgolf
+  | group-by type --to-table
+  | update items {
+    group-by date --to-table
+    | update items { get score | into int | math avg }
+  }
+  | each {|details|
+    let file = mktemp
+    $details
+    | get items
+    | each { $"($in.date) ($in.items)" }
+    | to text
+    | save -f $file
+
+    ^gnuplot -e $"
+      set title '($details.type)';
+      set terminal dumb size 90 30;
+      set ytics scale 0;
+      set xtics scale 0;
+      set offsets graph 0, 0, 5, 0;
+      set xdata time;
+      set timefmt '%Y-%m-%d';
+      set yrange [0:*];
+      plot '($file)' using 1:2 with lines title ''"
+    | let graph
+
+    rm $file
+
+    $"```(char newline)($graph)(char newline)```"
+  }
+  | to text
 }

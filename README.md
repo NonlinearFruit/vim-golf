@@ -35,6 +35,204 @@
 | [YAML to dotenv](yaml-to-dotenv) | 16 | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
 | [π](π) | 16 | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [48 B](π/normal-mode.txt) |
 
+<details><summary>History</summary>
+
+```
+                                                                                          
+                                                                                          
+                                        challenges                                        
+  25 +--------------------------------------------------------------------------------+   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  20 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |          *******************************************************************   |   
+  15 |       ***                                                                      |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  10 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   5 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   0 +--------------------------------------------------------------------------------+   
+   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                           best                                           
+  30 +--------------------------------------------------------------------------------+   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  25 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |          *******************************************************************   |   
+  20 |       ***                                                                      |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  15 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  10 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   5 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   0 +--------------------------------------------------------------------------------+   
+   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                            ex                                            
+  90 +--------------------------------------------------------------------------------+   
+     |                                                                                |   
+     |       ***                                                                      |   
+  80 |          ***************                                                       |   
+     |                         **********                                             |   
+  70 |                                   **********                                   |   
+     |                                             *******************                |   
+     |                                                                *************   |   
+  60 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  50 |                                                                                |   
+     |                                                                                |   
+  40 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  30 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  20 |                                                                                |   
+     |                                                                                |   
+  10 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   0 +--------------------------------------------------------------------------------+   
+   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                             lua                                          
+  350 +-------------------------------------------------------------------------------+   
+      |       *******************************************                             |   
+      |                                                 *                             |   
+  300 |                                                  *                            |   
+      |                                                  *************                |   
+      |                                                               *************   |   
+      |                                                                               |   
+  250 |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+  200 |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+  150 |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+  100 |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+   50 |                                                                               |   
+      |                                                                               |   
+      |                                                                               |   
+    0 +-------------------------------------------------------------------------------+   
+    04/02        04/09         04/16        04/23        04/30         05/07        05/14 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                          normal                                          
+  60 +--------------------------------------------------------------------------------+   
+     |                                                                                |   
+     |                                                                                |   
+     |       **********************************************************************   |   
+  50 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  40 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  30 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  20 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  10 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   0 +--------------------------------------------------------------------------------+   
+   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                          missing                                         
+  8 +---------------------------------------------------------------------------------+   
+    |                                                                                 |   
+    |                                                                                 |   
+  7 |                                                                                 |   
+    |                                                                                 |   
+    |                                                                                 |   
+  6 |                                                                                 |   
+    |                                                                                 |   
+    |                                                                                 |   
+  5 |                                                                                 |   
+    |                                                                                 |   
+    |                                                                                 |   
+  4 |                                                                                 |   
+    |                                                                                 |   
+    |                                                                                 |   
+  3 |           *********************************************                         |   
+    |          *                                             ******                   |   
+    |          *                                                   ******             |   
+  2 |         *                                                          ******       |   
+    |        *                                                                 ****   |   
+    |        *                                                                        |   
+  1 |       *                                                                         |   
+    |                                                                                 |   
+    |                                                                                 |   
+  0 +---------------------------------------------------------------------------------+   
+  04/02         04/09        04/16         04/23         04/30        05/07         05/14 
+                                                                                          
+```
+
+
+</details>
+
 ## How To (local)
 
 ```sh
@@ -60,10 +258,13 @@ podman run --rm -it -e key=$VIMGOLF_KEY ghcr.io/filbranden/vimgolf $CHALLENGE_ID
 
 ```
 Usage:
-  > toolkit download-challenge <challenge_id> 
+  > download-challenge <challenge_id> 
 
 Flags:
   -h, --help: Display the help message for this command
+
+Command Type:
+  > custom
 
 Parameters:
   challenge_id <any>
@@ -82,10 +283,13 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit get-latest-challenge 
+  > get-latest-challenge 
 
 Flags:
   -h, --help: Display the help message for this command
+
+Command Type:
+  > custom
 
 Input/output types:
   ╭───┬───────┬────────╮
@@ -101,10 +305,13 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit random-challenge 
+  > random-challenge 
 
 Flags:
   -h, --help: Display the help message for this command
+
+Command Type:
+  > custom
 
 Input/output types:
   ╭───┬───────┬────────╮
@@ -120,12 +327,15 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit run-challenge {flags} 
+  > run-challenge {flags} 
 
 Flags:
   -h, --help: Display the help message for this command
   -c, --challenge <string> (default: '')
   -m, --mode <string> (default: '')
+
+Command Type:
+  > custom
 
 Input/output types:
   ╭───┬───────┬────────╮
@@ -141,12 +351,15 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit try-challenge {flags} 
+  > try-challenge {flags} 
 
 Flags:
   -h, --help: Display the help message for this command
   -c, --challenge <string> (default: '')
   -m, --mode <string> (default: '')
+
+Command Type:
+  > custom
 
 Input/output types:
   ╭───┬───────┬────────╮
@@ -162,10 +375,13 @@ Input/output types:
 
 ```
 Usage:
-  > toolkit update-readme 
+  > update-readme 
 
 Flags:
   -h, --help: Display the help message for this command
+
+Command Type:
+  > custom
 
 Input/output types:
   ╭───┬───────┬────────╮
