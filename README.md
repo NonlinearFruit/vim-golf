@@ -7,7 +7,7 @@
 <a href=""><img alt="Number of solved challenges" src="https://img.shields.io/badge/challenges-16-yellow"></a>
 <a href=""><img alt="Average best score" src="https://img.shields.io/badge/best-21.2-blue"></a>
 <a href=""><img alt="Average ex score" src="https://img.shields.io/badge/ex-65.4-teal"></a>
-<a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-270.3-orange"></a>
+<a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-247.4-orange"></a>
 <a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-51.6-purple"></a>
 <a href=""><img alt="Number of solutions missing" src="https://img.shields.io/badge/missing-0-red"></a>
 
@@ -26,7 +26,7 @@
 | [Flip All Bits](flip-all-bits) | 29 | [33 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
 | [From brakets to parens](from-brakets-to-parens) | 24 | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
 | [Reordering properties](reordering-properties) | 24 | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
-| [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [517 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
+| [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [152 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
 | [Rural Post](rural-post) | 9 | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
 | [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
 | [snowflake fractal](snowflake-fractal) | 26 | [269 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
@@ -50,8 +50,8 @@
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
-     |          *******************************************************************   |   
-  15 |       ***                                                                      |   
+     |        *********************************************************************** |   
+  15 |      **                                                                        |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -66,7 +66,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+   04/02       04/09      04/16       04/23      04/30       05/07      05/14       05/21 
                                                                                           
 ```
 ```
@@ -80,8 +80,8 @@
   25 |                                                                                |   
      |                                                                                |   
      |                                                                                |   
-     |          *******************************************************************   |   
-  20 |       ***                                                                      |   
+     |        *********************************************************************** |   
+  20 |      **                                                                        |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -98,7 +98,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+   04/02       04/09      04/16       04/23      04/30       05/07      05/14       05/21 
                                                                                           
 ```
 ```
@@ -107,12 +107,12 @@
                                             ex                                            
   90 +--------------------------------------------------------------------------------+   
      |                                                                                |   
-     |       ***                                                                      |   
-  80 |          ***************                                                       |   
-     |                         **********                                             |   
-  70 |                                   **********                                   |   
-     |                                             *******************                |   
-     |                                                                *************   |   
+     |      **                                                                        |   
+  80 |        **************                                                          |   
+     |                      ********                                                  |   
+  70 |                              ********                                          |   
+     |                                      *****************                         |   
+     |                                                       ************************ |   
   60 |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -130,7 +130,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+   04/02       04/09      04/16       04/23      04/30       05/07      05/14       05/21 
                                                                                           
 ```
 ```
@@ -138,13 +138,13 @@
                                                                                           
                                              lua                                          
   350 +-------------------------------------------------------------------------------+   
-      |       *******************************************                             |   
-      |                                                 *                             |   
-  300 |                                                  *                            |   
-      |                                                  *************                |   
-      |                                                               *************   |   
-      |                                                                               |   
-  250 |                                                                               |   
+      |      ************************************                                     |   
+      |                                          *                                    |   
+  300 |                                          *                                    |   
+      |                                           ***********                         |   
+      |                                                      *******************      |   
+      |                                                                         ***   |   
+  250 |                                                                            ** |   
       |                                                                               |   
       |                                                                               |   
   200 |                                                                               |   
@@ -162,7 +162,7 @@
       |                                                                               |   
       |                                                                               |   
     0 +-------------------------------------------------------------------------------+   
-    04/02        04/09         04/16        04/23        04/30         05/07        05/14 
+    04/02      04/09       04/16      04/23       04/30      05/07       05/14      05/21 
                                                                                           
 ```
 ```
@@ -172,8 +172,8 @@
   60 +--------------------------------------------------------------------------------+   
      |                                                                                |   
      |                                                                                |   
-     |       **********************************************************************   |   
-  50 |                                                                                |   
+     |      ***************************************************************           |   
+  50 |                                                                     ********** |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -194,7 +194,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02         04/09        04/16         04/23        04/30         05/07        05/14 
+   04/02       04/09      04/16       04/23      04/30       05/07      05/14       05/21 
                                                                                           
 ```
 ```
@@ -216,17 +216,17 @@
   4 |                                                                                 |   
     |                                                                                 |   
     |                                                                                 |   
-  3 |           *********************************************                         |   
-    |          *                                             ******                   |   
-    |          *                                                   ******             |   
-  2 |         *                                                          ******       |   
-    |        *                                                                 ****   |   
-    |        *                                                                        |   
-  1 |       *                                                                         |   
-    |                                                                                 |   
-    |                                                                                 |   
+  3 |         **************************************                                  |   
+    |        *                                      ******                            |   
+    |        *                                            *****                       |   
+  2 |       *                                                  ******                 |   
+    |       *                                                        ***              |   
+    |      *                                                            **            |   
+  1 |      *                                                              *           |   
+    |                                                                      *          |   
+    |                                                                       **        |   
   0 +---------------------------------------------------------------------------------+   
-  04/02         04/09        04/16         04/23         04/30        05/07         05/14 
+  04/02       04/09      04/16       04/23       04/30       05/07      05/14       05/21 
                                                                                           
 ```
 
