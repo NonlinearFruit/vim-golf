@@ -1,2 +1,2 @@
-%s/\v\c(l)(o)(r)(e)(m)/\=(submatch(1)=="L"?"I":"i").(submatch(2)=="O"?"P":"p").(submatch(3)=="R"?"S":"s").(submatch(4)=="E"?"U":"u").submatch(5)/g
+%s/\v(l)(o)(r)(e)/\=(submatch(1)=="L"?"I":"i").(submatch(2)=="O"?"P":"p").(submatch(3)=="R"?"S":"s").(submatch(4)=="E"?"U":"u")/gi
 x
