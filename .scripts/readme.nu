@@ -133,7 +133,7 @@ def table-of-scores [] {
   | str join (char newline)
 }
 
-def get-frontmatter [challenge_dir] {
+export def get-frontmatter [challenge_dir] {
   [ $challenge_dir README.md ]
   | path join
   | open --raw $in

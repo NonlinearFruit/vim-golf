@@ -65,6 +65,7 @@ export def try-challenge [
     ex => { try-ex-mode $challenge },
     lua => { try-lua-mode $challenge }
     normal => { try-normal-mode $challenge }
+    official => { try-official-mode $challenge }
   }
 }
 
@@ -103,6 +104,13 @@ def try-lua-mode [challenge] {
 
 def try-normal-mode [challenge] {
   ^nvim -W ($challenge | path join normal-mode.txt) ($challenge | path join input.txt)
+}
+
+# Try the challenge in the vimgolf container. This will be submittable
+def try-official-mode [challenge] {
+  use readme.nu
+  let id  = readme get-frontmatter $challenge | get id
+  ^podman run --rm -it -e key=($env.VIMGOLF_KEY) ghcr.io/filbranden/vimgolf $id
 }
 
 def modes [] {
