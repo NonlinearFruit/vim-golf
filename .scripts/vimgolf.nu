@@ -28,6 +28,21 @@ export def random-challenge [] {
   | insert url https://www.vimgolf.com/challenges/($in.id)
 }
 
+export def list-played-challenges [user_id = 38899, user_name = "NonlinearFruit"] {
+  plugin use query
+  http get https://www.vimgolf.com/($user_id)/($user_name)
+  | query web --query '.grid_7' --as-html
+  | split row '<h5'
+  | skip 2
+  | each { "<h5" + $in }
+  | each {
+    {
+     id: ($in | query web --query 'h5 a' --attribute href | first | split row / | last)
+     best-player-score: ($in | parse '{_}Best player score: <b>{score}</b>{_}' | first | get score)
+    }
+  }
+}
+
 def list-all-challenges [] {
   if not (challenge-cache-exists) {
     mkdir ("~/.cache/vim-golf" | path expand)
