@@ -1,2 +1,2 @@
-%s/[ y]\@<!\d/\=!submatch(0)/g
+%s/\%>12c\d/\=!submatch(0)/g
 x
