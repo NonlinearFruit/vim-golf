@@ -19,17 +19,17 @@
 
 |challenge|best|mine|ex|lua|normal|
 |---|---|---|---|---|---|
-| [Case matching substitution](case-matching-substitution) | 31 | 34 | [53 B](case-matching-substitution/ex-mode.vim) | [322 B](case-matching-substitution/lua-mode.lua) | [54 B](case-matching-substitution/normal-mode.txt) |
-| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | 18 | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [20 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
-| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | 13 | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
+| [Case matching substitution](case-matching-substitution) | 31 | [34](https://www.vimgolf.com/challenges/9v006661427f00000000027a/user/NonlinearFruit) | [53 B](case-matching-substitution/ex-mode.vim) | [322 B](case-matching-substitution/lua-mode.lua) | [54 B](case-matching-substitution/normal-mode.txt) |
+| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | [18](https://www.vimgolf.com/challenges/9v0067056336000000000514/user/NonlinearFruit) | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [20 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | [13](https://www.vimgolf.com/challenges/9v006705493c000000000513/user/NonlinearFruit) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Checkerboard case pattern](checkerboard-case-pattern) | 15 |  | [31 B](checkerboard-case-pattern/ex-mode.vim) | [100 B](checkerboard-case-pattern/lua-mode.lua) | [28 B](checkerboard-case-pattern/normal-mode.txt) |
 | [Circle of fifths with sharps](circle-of-fifths-with-sharps) | 24 |  | [107 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
-| [Flip All Bits](flip-all-bits) | 29 | 29 | [31 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
+| [Flip All Bits](flip-all-bits) | 29 | [29](https://www.vimgolf.com/challenges/9v0069cf0efc000000000786/user/NonlinearFruit) | [31 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
 | [From brakets to parens](from-brakets-to-parens) | 24 |  | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
 | [Reordering properties](reordering-properties) | 24 |  | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
 | [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 |  | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [152 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
-| [Rural Post](rural-post) | 9 | 10 | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
-| [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
+| [Rural Post](rural-post) | 9 | [10](https://www.vimgolf.com/challenges/5f1e0217becb80000692b9c4/user/NonlinearFruit) | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
+| [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | [13](https://www.vimgolf.com/challenges/4d1a34ccfa85f32065000004/user/NonlinearFruit) | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
 | [snowflake fractal](snowflake-fractal) | 26 |  | [269 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | 36 |  | [81 B](sort-and-tag/ex-mode.vim) | [129 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | 16 |  | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) | [185 B](whitespace,-empty-lines-and-tabs/lua-mode.lua) | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
@@ -105,7 +105,7 @@
 ```
                                                                                           
                                                                                           
-                                         submitted                                        
+                                           mine                                           
   25 +--------------------------------------------------------------------------------+   
      |                                                                                |   
      |                                                                                |   

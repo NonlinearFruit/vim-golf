@@ -171,7 +171,9 @@ def submitted-score [x, submitted_challenges] {
   $submitted_challenges
   | where id == $x.frontmatter?.id?
   | get --optional 0.best-player-score
-  | default ''
+  | if $in != null {
+    $"[($in)]\(https://www.vimgolf.com/challenges/($x.frontmatter?.id?)/user/NonlinearFruit)"
+  } else ''
 }
 
 def as-hyperlink [record mode] {
