@@ -6,6 +6,7 @@
   <a href="https://www.vimgolf.com/38899/NonlinearFruit"><img alt="NonlinearFruit's vimgolf profile" src="https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim"></a>
 <a href=""><img alt="Number of solved challenges" src="https://img.shields.io/badge/challenges-16-yellow"></a>
 <a href=""><img alt="Average best score" src="https://img.shields.io/badge/best-21.2-blue"></a>
+<a href=""><img alt="Average mine score" src="https://img.shields.io/badge/mine-19.5-cyan"></a>
 <a href=""><img alt="Average ex score" src="https://img.shields.io/badge/ex-59.3-teal"></a>
 <a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-247.4-orange"></a>
 <a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-40.3-purple"></a>
@@ -16,24 +17,24 @@
 
 ## Scores
 
-|challenge|best|ex|lua|normal|
-|---|---|---|---|---|
-| [Case matching substitution](case-matching-substitution) | 31 | [53 B](case-matching-substitution/ex-mode.vim) | [322 B](case-matching-substitution/lua-mode.lua) | [54 B](case-matching-substitution/normal-mode.txt) |
-| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [20 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
-| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
-| [Checkerboard case pattern](checkerboard-case-pattern) | 15 | [31 B](checkerboard-case-pattern/ex-mode.vim) | [100 B](checkerboard-case-pattern/lua-mode.lua) | [28 B](checkerboard-case-pattern/normal-mode.txt) |
-| [Circle of fifths with sharps](circle-of-fifths-with-sharps) | 24 | [107 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
-| [Flip All Bits](flip-all-bits) | 29 | [31 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
-| [From brakets to parens](from-brakets-to-parens) | 24 | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
-| [Reordering properties](reordering-properties) | 24 | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
-| [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [152 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
-| [Rural Post](rural-post) | 9 | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
-| [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
-| [snowflake fractal](snowflake-fractal) | 26 | [269 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
-| [Sort and Tag](sort-and-tag) | 36 | [81 B](sort-and-tag/ex-mode.vim) | [129 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
-| [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | 16 | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) | [185 B](whitespace,-empty-lines-and-tabs/lua-mode.lua) | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
-| [YAML to dotenv](yaml-to-dotenv) | 16 | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
-| [π](π) | 16 | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [48 B](π/normal-mode.txt) |
+|challenge|best|mine|ex|lua|normal|
+|---|---|---|---|---|---|
+| [Case matching substitution](case-matching-substitution) | 31 | 34 | [53 B](case-matching-substitution/ex-mode.vim) | [322 B](case-matching-substitution/lua-mode.lua) | [54 B](case-matching-substitution/normal-mode.txt) |
+| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | 18 | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [20 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | 13 | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
+| [Checkerboard case pattern](checkerboard-case-pattern) | 15 |  | [31 B](checkerboard-case-pattern/ex-mode.vim) | [100 B](checkerboard-case-pattern/lua-mode.lua) | [28 B](checkerboard-case-pattern/normal-mode.txt) |
+| [Circle of fifths with sharps](circle-of-fifths-with-sharps) | 24 |  | [107 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
+| [Flip All Bits](flip-all-bits) | 29 | 29 | [31 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
+| [From brakets to parens](from-brakets-to-parens) | 24 |  | [35 B](from-brakets-to-parens/ex-mode.vim) | [342 B](from-brakets-to-parens/lua-mode.lua) | [47 B](from-brakets-to-parens/normal-mode.txt) |
+| [Reordering properties](reordering-properties) | 24 |  | [84 B](reordering-properties/ex-mode.vim) | [393 B](reordering-properties/lua-mode.lua) | [85 B](reordering-properties/normal-mode.txt) |
+| [Replace markdown sections with numbering](replace-markdown-sections-with-numbering) | 29 |  | [90 B](replace-markdown-sections-with-numbering/ex-mode.vim) | [152 B](replace-markdown-sections-with-numbering/lua-mode.lua) | [55 B](replace-markdown-sections-with-numbering/normal-mode.txt) |
+| [Rural Post](rural-post) | 9 | 10 | [9 B](rural-post/ex-mode.vim) | [204 B](rural-post/lua-mode.lua) | [10 B](rural-post/normal-mode.txt) |
+| [Simple text editing with Vim](simple-text-editing-with-vim) | 13 | 13 | [12 B](simple-text-editing-with-vim/ex-mode.vim) | [145 B](simple-text-editing-with-vim/lua-mode.lua) | [15 B](simple-text-editing-with-vim/normal-mode.txt) |
+| [snowflake fractal](snowflake-fractal) | 26 |  | [269 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
+| [Sort and Tag](sort-and-tag) | 36 |  | [81 B](sort-and-tag/ex-mode.vim) | [129 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
+| [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | 16 |  | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) | [185 B](whitespace,-empty-lines-and-tabs/lua-mode.lua) | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
+| [YAML to dotenv](yaml-to-dotenv) | 16 |  | [22 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [45 B](yaml-to-dotenv/normal-mode.txt) |
+| [π](π) | 16 |  | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [48 B](π/normal-mode.txt) |
 
 <details><summary>History</summary>
 
@@ -50,8 +51,8 @@
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
-     |       ***********************************************************************  |   
-  15 |     **                                                                         |   
+     |      ************************************************************************  |   
+  15 |    **                                                                          |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -66,7 +67,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02     04/09     04/16     04/23      04/30     05/07     05/14     05/21     05/28 
+   04/02   04/09   04/16   04/23   04/30    05/07   05/14   05/21   05/28   06/04   06/11 
                                                                                           
 ```
 ```
@@ -80,8 +81,8 @@
   25 |                                                                                |   
      |                                                                                |   
      |                                                                                |   
-     |       ***********************************************************************  |   
-  20 |     **                                                                         |   
+     |      ************************************************************************  |   
+  20 |    **                                                                          |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -98,7 +99,39 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02     04/09     04/16     04/23      04/30     05/07     05/14     05/21     05/28 
+   04/02   04/09   04/16   04/23   04/30    05/07   05/14   05/21   05/28   06/04   06/11 
+                                                                                          
+```
+```
+                                                                                          
+                                                                                          
+                                         submitted                                        
+  25 +--------------------------------------------------------------------------------+   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  20 |                                                                                |   
+     |                                         *                                      |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  15 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+  10 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   5 |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+     |                                                                                |   
+   0 +--------------------------------------------------------------------------------+   
+ 11/01/25    01/01/26   03/01/26   05/01/26    07/01/26    09/01/26   11/01/26    01/01/27
                                                                                           
 ```
 ```
@@ -107,13 +140,13 @@
                                             ex                                            
   90 +--------------------------------------------------------------------------------+   
      |                                                                                |   
-     |     **                                                                         |   
-  80 |       ************                                                             |   
-     |                   ********                                                     |   
-  70 |                           *******                                              |   
-     |                                  **************                                |   
-     |                                                **********************          |   
-  60 |                                                                      ********  |   
+     |    **                                                                          |   
+  80 |      *********                                                                 |   
+     |               ******                                                           |   
+  70 |                     ******                                                     |   
+     |                           ***********                                          |   
+     |                                      *******************                       |   
+  60 |                                                         *********************  |   
      |                                                                                |   
      |                                                                                |   
   50 |                                                                                |   
@@ -130,7 +163,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02     04/09     04/16     04/23      04/30     05/07     05/14     05/21     05/28 
+   04/02   04/09   04/16   04/23   04/30    05/07   05/14   05/21   05/28   06/04   06/11 
                                                                                           
 ```
 ```
@@ -138,13 +171,13 @@
                                                                                           
                                              lua                                          
   350 +-------------------------------------------------------------------------------+   
-      |     ********************************                                          |   
-      |                                     *                                         |   
-  300 |                                     *                                         |   
-      |                                      **********                               |   
-      |                                                ****************               |   
-      |                                                                ***            |   
-  250 |                                                                   **********  |   
+      |    **************************                                                 |   
+      |                             *                                                 |   
+  300 |                              *                                                |   
+      |                              ********                                         |   
+      |                                      *************                            |   
+      |                                                   **                          |   
+  250 |                                                     ************************  |   
       |                                                                               |   
       |                                                                               |   
   200 |                                                                               |   
@@ -162,7 +195,7 @@
       |                                                                               |   
       |                                                                               |   
     0 +-------------------------------------------------------------------------------+   
-    04/02     04/09     04/16     04/23     04/30     05/07     05/14     05/21     05/28 
+    04/02   04/09   04/16   04/23   04/30   05/07   05/14   05/21   05/28   06/04   06/11 
                                                                                           
 ```
 ```
@@ -172,12 +205,12 @@
   60 +--------------------------------------------------------------------------------+   
      |                                                                                |   
      |                                                                                |   
-     |     ********************************************************                   |   
-  50 |                                                             *********          |   
-     |                                                                      **        |   
-     |                                                                        *       |   
-     |                                                                        *       |   
-  40 |                                                                         *****  |   
+     |    ********************************************                                |   
+  50 |                                                *********                       |   
+     |                                                         *                      |   
+     |                                                         *                      |   
+     |                                                          *                     |   
+  40 |                                                          ********************  |   
      |                                                                                |   
      |                                                                                |   
      |                                                                                |   
@@ -194,7 +227,7 @@
      |                                                                                |   
      |                                                                                |   
    0 +--------------------------------------------------------------------------------+   
-   04/02     04/09     04/16     04/23      04/30     05/07     05/14     05/21     05/28 
+   04/02   04/09   04/16   04/23   04/30    05/07   05/14   05/21   05/28   06/04   06/11 
                                                                                           
 ```
 ```
@@ -216,17 +249,17 @@
   4 |                                                                                 |   
     |                                                                                 |   
     |                                                                                 |   
-  3 |        **********************************                                       |   
-    |       *                                  *****                                  |   
-    |       *                                       ****                              |   
-  2 |      *                                            *****                         |   
-    |      *                                                 ***                      |   
-    |     *                                                     *                     |   
-  1 |     *                                                      *                    |   
-    |                                                             *                   |   
-    |                                                              *                  |   
+  3 |      ***************************                                                |   
+    |      *                          ****                                            |   
+    |     *                               ****                                        |   
+  2 |     *                                   ****                                    |   
+    |     *                                       **                                  |   
+    |    *                                          *                                 |   
+  1 |    *                                           *                                |   
+    |                                                 *                               |   
+    |                                                  *                              |   
   0 +---------------------------------------------------------------------------------+   
-  04/02     04/09      04/16     04/23     04/30     05/07      05/14     05/21     05/28 
+  04/02   04/09   04/16    04/23   04/30   05/07   05/14   05/21    05/28   06/04   06/11 
                                                                                           
 ```
 

@@ -38,7 +38,7 @@ export def list-played-challenges [user_id = 38899, user_name = "NonlinearFruit"
   | each {
     {
      id: ($in | query web --query 'h5 a' --attribute href | first | split row / | last)
-     best-player-score: ($in | parse '{_}Best player score: <b>{score}</b>{_}' | first | get score)
+     best-player-score: ($in | parse '{_}Best player score: <b>{score}</b>{_}' | first | get score | into int)
     }
   }
 }

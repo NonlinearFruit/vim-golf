@@ -49,6 +49,7 @@ def badges [] {
     [vimgolf    nonlinearfruit green?logo=vim "NonlinearFruit's vimgolf profile" https://www.vimgolf.com/38899/NonlinearFruit]
     [challenges (challenges)   yellow         "Number of solved challenges"      null]
     [best       (avg-best)     blue           "Average best score"               null]
+    [mine       (avg-mine)     cyan           "Average mine score"               null]
     [ex         (avg-ex)       teal           "Average ex score"                 null]
     [lua        (avg-lua)      orange         "Average lua score"                null]
     [normal     (avg-normal)   purple         "Average normal score"             null]
@@ -75,6 +76,14 @@ def avg-best [] {
   | get name
   | each { get-frontmatter $in }
   | get best
+  | math avg
+  | math round --precision 1
+}
+
+def avg-mine [] {
+  use vimgolf.nu
+  vimgolf list-played-challenges
+  | get best-player-score
   | math avg
   | math round --precision 1
 }
@@ -110,6 +119,8 @@ def missing [] {
 }
 
 def table-of-scores [] {
+  use vimgolf.nu
+  let submitted_challenges = vimgolf list-played-challenges
   ls */*-mode.*
   | rename --column { size: score }
   | insert challenge { get name | path dirname }
@@ -127,9 +138,9 @@ def table-of-scores [] {
   | default '' normal
   | default '' lua
   | each {|x|
-    $"| (row-title $x) | (top-score $x) | (as-hyperlink $x ex) | (as-hyperlink $x lua) | (as-hyperlink $x normal) |"
+    $"| (row-title $x) | (top-score $x) | (submitted-score $x $submitted_challenges) | (as-hyperlink $x ex) | (as-hyperlink $x lua) | (as-hyperlink $x normal) |"
   }
-  | prepend ["|challenge|best|ex|lua|normal|" "|---|---|---|---|---|"]
+  | prepend ["|challenge|best|mine|ex|lua|normal|" "|---|---|---|---|---|---|"]
   | str join (char newline)
 }
 
@@ -154,6 +165,13 @@ def row-title [x] {
 def top-score [x] {
   $x.frontmatter?
   | get best?
+}
+
+def submitted-score [x, submitted_challenges] {
+  $submitted_challenges
+  | where id == $x.frontmatter?.id?
+  | get --optional 0.best-player-score
+  | default ''
 }
 
 def as-hyperlink [record mode] {
