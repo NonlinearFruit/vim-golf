@@ -1,1 +1,1 @@
-cGπ:so %|call append(0, Pi())|set nofixeol|x
+@=execute('so%|se fixeol!')cG=Pi()πZZ
