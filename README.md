@@ -6,7 +6,7 @@
   <a href="https://www.vimgolf.com/38899/NonlinearFruit"><img alt="NonlinearFruit's vimgolf profile" src="https://img.shields.io/badge/vimgolf-nonlinearfruit-green?logo=vim"></a>
 <a href=""><img alt="Number of solved challenges" src="https://img.shields.io/badge/challenges-16-yellow"></a>
 <a href=""><img alt="Average best score" src="https://img.shields.io/badge/best-21.2-blue"></a>
-<a href=""><img alt="Average mine score" src="https://img.shields.io/badge/mine-19.3-cyan"></a>
+<a href=""><img alt="Average mine score" src="https://img.shields.io/badge/mine-19.0-cyan"></a>
 <a href=""><img alt="Average ex score" src="https://img.shields.io/badge/ex-59.2-teal"></a>
 <a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-247.4-orange"></a>
 <a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-38.3-purple"></a>
@@ -33,7 +33,7 @@
 | [snowflake fractal](snowflake-fractal) | 26 |  | [269 B](snowflake-fractal/ex-mode.vim) | [336 B](snowflake-fractal/lua-mode.lua) | [53 B](snowflake-fractal/normal-mode.txt) |
 | [Sort and Tag](sort-and-tag) | 36 |  | [81 B](sort-and-tag/ex-mode.vim) | [129 B](sort-and-tag/lua-mode.lua) | [64 B](sort-and-tag/normal-mode.txt) |
 | [Whitespace, empty lines and tabs](whitespace,-empty-lines-and-tabs) | 16 |  | [29 B](whitespace,-empty-lines-and-tabs/ex-mode.vim) | [185 B](whitespace,-empty-lines-and-tabs/lua-mode.lua) | [35 B](whitespace,-empty-lines-and-tabs/normal-mode.txt) |
-| [YAML to dotenv](yaml-to-dotenv) | 16 | [18](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d/user/NonlinearFruit) | [21 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [17 B](yaml-to-dotenv/normal-mode.txt) |
+| [YAML to dotenv](yaml-to-dotenv) | 16 | [16](https://www.vimgolf.com/challenges/9v00674f1bfb00000000063d/user/NonlinearFruit) | [21 B](yaml-to-dotenv/ex-mode.vim) | [69 B](yaml-to-dotenv/lua-mode.lua) | [16 B](yaml-to-dotenv/normal-mode.txt) |
 | [π](π) | 16 |  | [57 B](π/ex-mode.vim) | [218 B](π/lua-mode.lua) | [45 B](π/normal-mode.txt) |
 
 <details><summary>History</summary>
