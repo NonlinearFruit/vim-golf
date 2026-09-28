@@ -9,7 +9,7 @@
 <a href=""><img alt="Average mine score" src="https://img.shields.io/badge/mine-19.0-cyan"></a>
 <a href=""><img alt="Average ex score" src="https://img.shields.io/badge/ex-59.2-teal"></a>
 <a href=""><img alt="Average lua score" src="https://img.shields.io/badge/lua-247.4-orange"></a>
-<a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-38.3-purple"></a>
+<a href=""><img alt="Average normal score" src="https://img.shields.io/badge/normal-38.1-purple"></a>
 <a href=""><img alt="Number of solutions missing" src="https://img.shields.io/badge/missing-0-red"></a>
 
 
@@ -20,8 +20,8 @@
 |challenge|best|mine|ex|lua|normal|
 |---|---|---|---|---|---|
 | [Case matching substitution](case-matching-substitution) | 31 | [34](https://www.vimgolf.com/challenges/9v006661427f00000000027a/user/NonlinearFruit) | [53 B](case-matching-substitution/ex-mode.vim) | [322 B](case-matching-substitution/lua-mode.lua) | [54 B](case-matching-substitution/normal-mode.txt) |
-| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | [18](https://www.vimgolf.com/challenges/9v0067056336000000000514/user/NonlinearFruit) | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [20 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
-| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | [13](https://www.vimgolf.com/challenges/9v006705493c000000000513/user/NonlinearFruit) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [13 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
+| [Change class fields from camel case to snake case](change-class-fields-from-camel-case-to-snake-case) | 18 | [18](https://www.vimgolf.com/challenges/9v0067056336000000000514/user/NonlinearFruit) | [19 B](change-class-fields-from-camel-case-to-snake-case/ex-mode.vim) | [492 B](change-class-fields-from-camel-case-to-snake-case/lua-mode.lua) | [21 B](change-class-fields-from-camel-case-to-snake-case/normal-mode.txt) |
+| [Change class fields from snake case to camel case](change-class-fields-from-snake-case-to-camel-case) | 13 | [13](https://www.vimgolf.com/challenges/9v006705493c000000000513/user/NonlinearFruit) | [19 B](change-class-fields-from-snake-case-to-camel-case/ex-mode.vim) | [322 B](change-class-fields-from-snake-case-to-camel-case/lua-mode.lua) | [10 B](change-class-fields-from-snake-case-to-camel-case/normal-mode.txt) |
 | [Checkerboard case pattern](checkerboard-case-pattern) | 15 |  | [31 B](checkerboard-case-pattern/ex-mode.vim) | [100 B](checkerboard-case-pattern/lua-mode.lua) | [28 B](checkerboard-case-pattern/normal-mode.txt) |
 | [Circle of fifths with sharps](circle-of-fifths-with-sharps) | 24 |  | [107 B](circle-of-fifths-with-sharps/ex-mode.vim) | [406 B](circle-of-fifths-with-sharps/lua-mode.lua) | [46 B](circle-of-fifths-with-sharps/normal-mode.txt) |
 | [Flip All Bits](flip-all-bits) | 29 | [29](https://www.vimgolf.com/challenges/9v0069cf0efc000000000786/user/NonlinearFruit) | [31 B](flip-all-bits/ex-mode.vim) | [144 B](flip-all-bits/lua-mode.lua) | [26 B](flip-all-bits/normal-mode.txt) |
@@ -210,8 +210,8 @@
      |                                              *                                 |   
      |                                              *                                 |   
      |                                               *                                |   
-  40 |                                               *********************************|   
-     |                                                                                |   
+  40 |                                               ***************************      |   
+     |                                                                          ******|   
      |                                                                                |   
      |                                                                                |   
   30 |                                                                                |   
