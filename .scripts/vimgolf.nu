@@ -106,7 +106,7 @@ def create-frontmatter [challenge] {
 
 def save-challenge [challenge] {
   const path_to_repo = [(path self) .. ..] | path join | path expand
-  let challenge_dir = $challenge.title | str downcase | str replace --all -r '\s' '-'
+  let challenge_dir = $challenge.title | str lowercase | str replace --all -r '\s' '-'
   let challenge_path = [$path_to_repo $challenge_dir] | path join
   mkdir $challenge_path
 
